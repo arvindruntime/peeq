@@ -1,0 +1,144 @@
+header.dash__header {
+  display: none !important;
+}
+
+aside.lm__dash {
+  display: none !important;
+}
+
+header.lm__header-logo {
+  display: block !important;
+}
+
+body {
+  background-image: url("../images/hero-bg.jpg") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+section.lm__hero.lm__plan-hero {
+  background-image: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--login-font) !important;
+}
+
+.lm__hero .row.lm_sign-in .lm__login--box,
+.lm__hero .row.lm_forget .lm__login--box,
+.lm__hero .lm__reset .lm__login--box {
+  max-width: 710px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lm__hero .row.lm_sign-in .lm__login--box .lm__login-form,
+.lm__hero .row.lm_forget .lm__login--box .lm__login-form,
+.lm__hero .lm__reset .lm__login--box .lm__login-form {
+  margin-top: 50px;
+}
+@media (max-width: 576px) {
+  .lm__hero .row.lm_sign-in .lm__login--box .lm__login-form,
+  .lm__hero .row.lm_forget .lm__login--box .lm__login-form,
+  .lm__hero .lm__reset .lm__login--box .lm__login-form {
+    margin-top: 30px;
+  }
+}
+.lm__hero .row.lm_sign-in .lm__login--box .lm__ac--login,
+.lm__hero .row.lm_forget .lm__login--box .lm__ac--login,
+.lm__hero .lm__reset .lm__login--box .lm__ac--login {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.lm__hero .row.lm_sign-in .lm__login--box .lm__ac--login p,
+.lm__hero .row.lm_forget .lm__login--box .lm__ac--login p,
+.lm__hero .lm__reset .lm__login--box .lm__ac--login p {
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .lm__hero .row.lm_sign-in .lm__login--box .lm__ac--login,
+  .lm__hero .row.lm_forget .lm__login--box .lm__ac--login,
+  .lm__hero .lm__reset .lm__login--box .lm__ac--login {
+    margin-top: 30px;
+  }
+}
+.lm__hero .row.lm_sign-in .lm__login--box .lm__form--check label,
+.lm__hero .row.lm_forget .lm__login--box .lm__form--check label,
+.lm__hero .lm__reset .lm__login--box .lm__form--check label {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.lm__hero .row.lm_sign-in .lm__login--box .lm__pass,
+.lm__hero .row.lm_forget .lm__login--box .lm__pass,
+.lm__hero .lm__reset .lm__login--box .lm__pass {
+  font-size: 14px;
+}
+.lm__hero .row.lm_sign-in .lm__login--box .lm__login-form .lm__form-input input,
+.lm__hero .row.lm_forget .lm__login--box .lm__login-form .lm__form-input input,
+.lm__hero .lm__reset .lm__login--box .lm__login-form .lm__form-input input {
+  padding-left: 65px;
+}
+.lm__hero .row.lm_sign-in .lm__form-help p,
+.lm__hero .row.lm_forget .lm__form-help p,
+.lm__hero .lm__reset .lm__form-help p {
+  margin-bottom: 50px;
+}
+.lm__hero .lm_sign-up .lm__login--box {
+  max-width: 1080px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.lm__hero .lm__plan .container {
+  max-width: 1570px;
+  width: 100%;
+}
+.lm__hero .lm__plan .lm__plan-inner .col {
+  padding: 0 !important;
+}
+.lm__hero .lm__plan .lm__card-main {
+  max-width: 1540px;
+  width: 100%;
+}
+.lm__hero .lm__plan .lm__card-main .lm__card {
+  height: 100%;
+}
+.lm__hero .lm__plan .lm__card-main .lm__card .lm-list {
+  height: 100%;
+}
+.lm__hero .lm__plan .lm__card-main .lm__card.text-start.card.p-3 {
+  padding: 24px !important;
+}
+.lm__hero .lm__plan .lm__card-main .lm__card.text-start.card.p-3 .card-body h5, .lm__hero .lm__plan .lm__card-main .lm__card.text-start.card.p-3 .card-body p, .lm__hero .lm__plan .lm__card-main .lm__card.text-start.card.p-3 .card-body ul {
+  margin-bottom: 24px !important;
+}
+.lm__hero .lm__plan .lm__card-main .lm__card.text-start.card.p-3 .lm_card-btn {
+  margin-top: 0 !important;
+}
+.lm__hero .row.lm__payment .lm__login--box {
+  border-radius: 20px;
+  max-width: 620px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lm__hero .row.lm__payment .lm__login--box .lm__login-title,
+.lm__hero .row.lm__payment .lm__login--box .lm__card.card {
+  margin-bottom: 30px !important;
+}
+.lm__hero .row.lm__payment .lm__login--box .lm__login-title h2, .lm__hero .row.lm__payment .lm__login--box .lm__login-title h6,
+.lm__hero .row.lm__payment .lm__login--box .lm__card.card h2,
+.lm__hero .row.lm__payment .lm__login--box .lm__card.card h6 {
+  margin-bottom: 0;
+}
+.lm__hero .row.lm__payment .lm__login--box .lm__login-form.payment h5 {
+  margin-bottom: 30px !important;
+}
+.lm__hero .row.lm__payment .lm__login--box .lm__form--button {
+  margin-bottom: 0;
+}
+.lm__hero .row.lm__payment .lm__login--box .lm_price {
+  text-align: end;
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,602 @@
+.lm__header-logo
+  position: fixed
+  width: 100%
+  z-index: 3
+  transition: all 0.5s ease-in-out
+  .lm-logo
+    margin-left: 50px
+    margin-top: 50px
+    width: 250px
+    transition: all 0.5s ease-in-out
+    svg
+      height: 150px
+    // max-width: 100%
+    // width: 100%
+    @media (max-width:1200px)
+      width: 130px
+      @media (max-width:768px)
+        width: 110px
+        margin-left: 0
+        margin-top: 10px
+    @media (max-width:992px)
+      width: 100%
+
+.lm__header-logo.fixed-header
+  background: rgba(1, 21, 43, 0.9)
+  padding-bottom: 10px
+  // transition: all 0.5s ease-in-out
+  .lm-logo
+    margin-top: 15px
+    width: 200px
+    // margin-bottom: 15px
+    transition: all 0.5s ease-in-out
+    svg
+      height: 70px
+    @media (max-width:768px)
+      width: 150px
+      margin-left: 0
+      margin-top: 10px
+    @media (max-width:992px)
+
+@media (max-width:1200px)
+  .lm__header-logo
+    .lm-logo
+      width: 200px
+@media (max-width:576px)
+  .lm__header-logo
+    .lm-logo
+      width: 70px
+.lm__dash-heade
+  .dropdown-menu
+    min-width: 350px !important
+    width: 100% !important
+    border: none
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+    .btn
+      min-width: auto
+  .avtar-55
+    border-radius: 50%
+    background: #FFF
+    width: 60px
+    height: 60px
+    line-height: 60px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    position: relative
+    overflow: hidden
+    // @media (max-width:475px)
+    // 	width: 40px
+    // 	height: 40px
+    // 	line-height: 40px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .avtar-40
+    border-radius: 50%
+    background: #FFF
+    width: 40px
+    height: 40px
+    line-height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    position: relative
+    overflow: hidden
+    // @media (max-width:475px)
+    // 	width: 40px
+    // 	height: 40px
+    // 	line-height: 40px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+// ---
+
+.dash__header
+  position: fixed
+  left: 0
+  max-width: 100%
+  width: 100%
+  top: 0
+  z-index: 10
+  // @media( max-width:992px)
+  //   background: #f2f2f2
+
+  &.fixed-header
+    background: #f2f2f2
+    box-shadow: 0px 0px 20px rgb(83 88 93 / 15%)
+    @media( max-width:992px)
+      background: #f2f2f2
+
+  .container
+    padding-left: 400px
+    padding-right: 50px
+    max-width: 100%
+// body.dark
+//   .dash__header
+//     @media( max-width:992px)
+//       background: #01152B
+.lm__dash
+  position: fixed
+  left: 0
+  top: 0
+  width: 240px
+  overflow: auto
+  height: 100vh
+  padding: 20px
+  background: #fff
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1)
+  border-radius: 0px 20px 20px 0px
+  z-index: 11
+  @media( max-width:1024px)
+    width: 300px
+
+  @media( max-width:992px)
+    box-shadow: none
+    // background: transparent
+    width: 350px
+
+  .lm__dash-wrapper
+    display: flex
+    flex-direction: column
+    height: calc(100% - 30px)
+    .lm__dash-logo
+      margin-bottom: 35px
+      width: 100%
+      @media( max-width:576px)
+        img
+          height: 110px
+      a
+        width: 100%
+        svg
+          height: 150px
+    .lm__dash-menu
+      .lm__dash-menu-item
+        font-size: 16px
+        @media (max-width:768px)
+          font-size: 16px
+        @media (max-width:576px)
+          font-size: 14px
+        a
+          color: #252A36
+          background: transparent
+          // align-items: center
+          span
+            transition: all 0.5s ease-in-out
+            flex-shrink: 0
+          svg
+            transition: all 0.5s ease-in-out
+            path
+              // fill: #fff
+              stroke: #252A36
+              transition: all 0.5s ease-in-out
+          &.active,
+          &:hover
+            color: #252A36
+            background: var(--primary-color)
+            a
+              color: #fff
+            // svg
+            //   path
+            //     // fill: #fff
+            //     stroke: #fff !important
+    .lm_dash-logout
+      margin-top: 50px
+      display: flex
+      height: 100%
+      align-items: end
+      margin-bottom: -25px
+      // min-height: -webkit-fill-available
+      // margin-bottom: 350px
+      @media (max-width:576px)
+        margin-bottom: 300px
+        min-height: -webkit-fill-available
+        padding-bottom: 20px
+      a
+        color: #fff
+        font-size: 18px
+        width: 100%
+        background: #01152B
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1490196078)
+        border-radius: 8px !important
+        svg
+          path
+            stroke: #fff
+        &:hover
+          color: #fff
+          background: var(--primary-color)
+    .lm__show
+      border: none
+      background: #fff
+      box-shadow: 0px 0px 20px rgb(83 88 93 / 15%) !important
+      margin-left: 20px !important
+    .lm__show.show
+      position: static !important
+      transform: none !important
+// --
+.lm__dash-con,
+.dash__header
+  .lm__dash-heade
+    padding: 24px 0
+    @media( max-width:576px)
+      padding-left: 15px
+      padding-right: 15px
+  .container
+    max-width: 100%
+    padding-left: 300px
+    padding-right: 50px
+    @media( max-width:1400px)
+      padding-right: 50px
+    @media( max-width:1200px)
+      padding-left: 280px
+    // @media( max-width:1024px)
+    //   padding-left: 330px
+    @media( max-width:1024px)
+      padding-right: 20px
+    @media( max-width:992px)
+      padding-left: 30px
+      padding-right: 30px
+    @media( max-width:576px)
+      padding-left: 15px
+      padding-right: 15px
+
+  .lm__dash-search
+    position: relative
+    &.lm__dash-search-2
+      .form-control
+        padding: 5px 10px 5px 42px
+      button
+        left: 25px
+        right: auto
+        span
+          background: none
+    button
+      position: absolute
+      transform: translate(-50%, -52%)
+      top: 50%
+      right: -20px
+      border: none
+      background: transparent
+      span
+        border-radius: 50%
+        background: #F2F2F2
+        width: 42px
+        height: 42px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 10px
+  .bg-white-42
+    border-radius: 50%
+    background: #ffffff
+    width: 42px
+    height: 42px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 10px
+    flex: 0 0 auto
+    @media( max-width:576px)
+      width: 35px
+      height: 35px
+
+  .lm__dash-list
+    .lm__dash-item
+      position: relative
+      &:not(:last-child)
+        padding-right: 20px
+        @media( max-width:1024px)
+          padding-right: 0px
+        &::after
+          content: ""
+          position: absolute
+          width: 1px
+          background: #c5c5c5
+          height: 20px
+          right: 0px
+          top: 50%
+          transform: translate(-50% ,-50%)
+          @media( max-width:1024px)
+            right: -7px
+@media (max-width: 992px)
+  .lm__dash-con
+    .lm__dash-heade
+      position: fixed
+      left: 0
+      right: 0
+      width: 100%
+      background: #fff
+      z-index: 99
+      padding: 20px 50px
+    .lm__dash-inner
+      padding-top: 15px
+
+.lm__dash-heade
+  .dropdown
+    .dropdown-toggle
+      &::after
+        display: none
+  .dropdown
+    .open
+      >
+        .dropdown-menu
+          display: block
+          width: 100%
+          border: none
+          position: static
+
+    .dropdown-menu
+      min-width: 350px !important
+      width: 100% !important
+      border: none
+      box-shadow: 0 3px 6px rgb(0 0 0 / 16%)
+      span.icon-md
+        border-radius: 50%
+        background: #E3A130
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 10px
+        flex: 0 0 auto
+      &.show
+        z-index: 2 !important
+
+      &.dropdown-menu-inner
+        min-width: 280px !important
+        max-width: 280px !important
+        width: 100% !important
+        background: #fff
+        box-shadow: 0 3px 6px rgb(0 0 0 / 16%)
+        margin: 0 auto
+      .divider
+        height: 1px
+        margin: 9px auto
+        overflow: hidden
+        background-color: #e5e5e5
+        max-width: 290px
+        width: 100%
+      .dropdown-item
+        color: #252A36
+        font-size: 16px
+        padding: 8px 20px
+        &:hover
+          color: #000
+          background-color: #E3A130
+        &:active
+          color: #000
+          background-color: #E3A130 !important
+        &:focus
+          background: transparent
+      h6
+        color: #000000
+        font-size: 20px
+    .toggler
+      >
+        a
+          &::after
+            display: block
+            content: " "
+            float: right
+            width: 0
+            height: 0
+            border-color: transparent
+            border-style: solid
+            border-width: 8px 8px 0px 8px
+            border-top-color: #000
+            margin-top: 7px
+            margin-right: -5px
+            border-radius: 5px
+
+.dropdown-sound
+  .dropdown-card
+    position: absolute
+    background: #fff
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+    transition: all 0.6s ease-in-out
+    z-index: 3
+    width: 250px
+    border-radius: 20px
+    top: 100px
+    right: 18px
+    visibility: hidden
+    opacity: 0
+  &:hover
+    .dropdown-card
+      opacity: 1
+      visibility: visible
+      top: 50px
+      display: block
+  &.main
+    .dropdown-card
+      display: block
+
+@media (max-width:786px)
+  .dropdown-sound
+    &.main
+      .dropdown-card
+        display: block
+        visibility: visible
+        opacity: 1
+        top: 50px
+    .dropdown-card
+      display: none
+
+a.dropdown-toggle-sound
+  cursor: pointer
+  width: 40px
+  height: auto
+  display: flex
+  justify-content: center
+
+.dropdown-card
+  .form-check-input
+    display: block !important
+    background-color: #252A36
+    padding: 10px
+    width: 45px
+    background-image: url("../images/toggle-01.svg")
+    background-size: 35%
+    left: 10px
+    background-position: 2px center
+    &:focus
+      box-shadow: none !important
+      border-color: transparent !important
+    &:checked
+      background-color: #e3a130
+      border-color: #e3a130
+      padding: 10px
+      background-position: 25px
+  .form-check
+    input[type=checkbox]
+      & + label
+        &:after
+          display: none !important
+  .form-check
+    input[type=checkbox]
+      & + label
+        &:before
+          display: none !important
+
+.aside-colse
+  display: none
+
+@media (max-width:991px)
+  .aside-colse
+    position: absolute
+    right: 15px
+    top: 15px
+    display: block
+    cursor: pointer
+
+@media (max-width:991px)
+  aside.lm__dash
+    position: fixed
+    left: -100%
+    top: 0
+    width: 240px
+    overflow: auto
+    height: 100vh
+    padding: 25px
+    background: #fff
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1)
+    border-radius: 0px 20px 20px 0px
+    transition: all 0.5s ease-in-out
+    z-index: 999
+    &.show-aside
+      left: 0
+
+.dropdown-menu
+  top: 120px!important
+  transition: all 0.5s ease-in-out
+  &.show
+    top: 0px!important
+
+.list-group
+  .list-group-item
+    background: transparent !important
+
+body.dark
+  .lm__dash
+    .lm__dash-wrapper
+      .lm_dash-logout
+        a
+          background: var(--bg-dark-theame)
+          &:hover
+            color: #fff
+            background: var(--primary-color)
+          svg
+            // fill: #fff
+            // stroke: #fff
+            path
+              fill: none !important
+              stroke: #fff
+
+li.lm__dash-item
+  .dropdown-menu
+    .list-group
+      .list-group-item
+        a
+          color: #212529
+          &:hover
+            color: #e3a130
+
+.text-secondary.title-font
+  a
+    color: #212529
+    &:hover
+      color: #e3a130 !important
+
+body.dark
+  li.lm__dash-item
+    .dropdown-menu
+      .list-group
+        .list-group-item
+          a
+            color: #fff
+            &:hover
+              color: #e3a130
+
+  .text-secondary.title-font a
+    color: #fff
+  svg
+    .a2
+      fill: #fff
+      stroke: #fff
+    .a1
+      fill: #fff
+
+.net
+  stroke: inherit !important
+
+body.dark .light-logo
+  display: none
+
+body.dark .dark-logo
+  display: block
+  margin: auto
+
+body .light-logo
+  display: block
+  margin: auto
+
+body .dark-logo
+  display: none
+.bg-white-42.me-2.user-profile
+  background: #fff !important
+
+// .lm__dash-menu-item a.show .sub-icon
+//   transform: rotate(-180deg)
+
+// .lm__dash-menu-item a .sub-icon
+//   transition: all 0.5s ease-in-out !important
+//   width: 18px
+//   align-items: center
+
+
+.lm__dash-menu-item 
+  a
+    align-items: center
+    .sub-icon
+      transition: all 0.5s ease-in-out !important
+      width: 18px
+      svg
+        path
+          stroke-width: 0.2px
+    &.show
+      .sub-icon
+        transform: rotate(-180deg)
+body.dark
+  .lm__dash .lm__dash-wrapper .lm__show
+    background: #0e3049
+  .lm__dash-menu-item 
+    a
+      .sub-icon
+        svg
+          path
+            fill: #fff !important

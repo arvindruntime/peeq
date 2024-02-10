@@ -1,0 +1,60 @@
+@use 'sass:map'
+
+// For Font mixin
+@mixin font-face($font-name, $font-path, $font-style, $font-weight)
+	@font-face
+		font-family: $font-name
+		font-style: $font-style
+		font-weight: $font-weight
+		src: url('#{$font-path}.eot'), url('#{$font-path}.eot?#iefix') format('embedded-opentype'), url('#{$font-path}.woff2') format('woff2'), url('#{$font-path}.woff') format('woff2'), url('#{$font-path}.ttf') format('truetype'), url('#{$font-path}.svg#Inter-Bold') format('svg')
+
+// min-width media query array
+$m-breakpoints: (sm:576px, md:768px, lg:992px, xls:1200px, xl:1280px, xxl:1440px, xxxl: 1800px)
+
+// max-width media query array
+$mx-breakpoints: (sm:575px, md:767px, lg:991px, xls:1199px, xl:1279px, xxl:1439px, xxxl: 1679px)
+
+// container array
+$container-width: (sm: 100%, md: 46.875rem, lg: 70.25rem, xls: 75.5rem, xl: 80.25rem, xxl: 81.25rem, xxxl: 92.25rem)
+
+// For min-width mixin
+@mixin mmq($key)
+	$size: map.get($m-breakpoints, $key)
+	@media (min-width: $size)
+		@content
+
+// For max-width mixin
+@mixin mxmq($key)
+	$size: map.get($mx-breakpoints, $key)
+	@media (min-width: $size)
+		@content
+
+
+// img-class mixin------------------------
+@mixin img_rel($padding)
+	position: relative
+	width: 100%
+	padding-top: $padding
+	overflow: hidden
+
+// img-mixin ------------------
+@mixin img_abs($obj_fit)
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	object-fit: $obj_fit
+
+// For Margin and Padding mixin
+@mixin generate($prefix, $property) 
+	$sizes: [0, .25, .5, 2, 3.75, 5.625, 7.5, 9.375]
+	$spacing: 1rem
+	@for $i from 1 through length($sizes) 
+		$size: nth($sizes, $i)
+		.#{$prefix}-#{$i - 1} 
+			#{$property}: $spacing * $size
+
+

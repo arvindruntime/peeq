@@ -1,0 +1,137 @@
+.lm__master {
+  background: #F2F2F2;
+  padding: 200px 0;
+}
+.lm__master .container {
+  max-width: 100%;
+  padding-left: 400px;
+  padding-right: 50px;
+}
+.lm__master h2.text-white {
+  color: #01152B !important;
+}
+
+.lm__master-inner {
+  max-width: 1025px;
+}
+
+.lm__form-input label {
+  font-size: 50px;
+  flex-shrink: 0;
+  color: #01152B;
+}
+.lm__form-input .form-control-icon {
+  width: 100%;
+}
+.lm__form-input .form-control-icon .icon {
+  padding-left: 3.438rem;
+}
+.lm__form-input .form-control-icon span {
+  position: absolute;
+  top: 50%;
+  left: 33px;
+  transform: translate(-50%, -50%);
+}
+.lm__form-input textarea.form-control {
+  height: 200px;
+  border-radius: 20px;
+}
+
+input#lm-upd {
+  visibility: hidden !important;
+  display: none;
+}
+
+.lm__upd label {
+  display: block !important;
+  cursor: pointer;
+}
+.lm__upd label span {
+  font-size: 16px;
+}
+.lm__upd label svg path {
+  fill: #01152B;
+}
+
+.lm__upd span {
+  border: 1px solid #01152B;
+  padding: 7px 10px;
+  justify-content: center;
+  border-radius: 8px;
+  color: #01152B;
+  column-gap: 10px;
+}
+
+.lm__form-input .lm__dash-search {
+  position: relative;
+}
+.lm__form-input .lm__dash-search button {
+  position: absolute;
+  transform: translate(-50%, -78%);
+  top: 50%;
+  right: -20px;
+  border: none;
+  background: transparent;
+}
+.lm__form-input .lm__dash-search button span {
+  border-radius: 50%;
+  background: #01152B;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+input::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none !important;
+  display: none !important;
+}
+
+.lm__form-input .lm__term label {
+  font-size: 16px;
+}
+.lm__form-input h3 {
+  font-size: 50px;
+  color: #01152B;
+}
+
+.lm__form-input.radio label {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--primary-font) !important;
+  color: var(--primary-color);
+}
+.lm__form-input.radio label p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #01152B;
+}
+.lm__form-input.radio .form-check-input {
+  border: 2px solid #e3a130;
+  background: transparent;
+}
+.lm__form-input.radio .form-check-input:checked {
+  background-color: #e3a130 !important;
+  border-color: #e3a130 !important;
+  box-shadow: inset 0px 0px 0px 2px #252a36 !important;
+}
+.lm__form-input.radio .form-check-input:focus {
+  box-shadow: inset 0px 0px 0px 2px #252a36 !important;
+  box-shadow: none;
+}
+
+.dark .lm__master {
+  background: #01152B;
+}
+.dark .lm__form-input label {
+  color: #ffffff;
+}
+.dark h2.text-white {
+  color: #ffffff !important;
+}
+.dark h3 {
+  font-size: 50px;
+  color: #ffffff;
+}/*# sourceMappingURL=master.css.map */

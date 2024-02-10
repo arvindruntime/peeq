@@ -1,0 +1,914 @@
+@import "./variable"
+
+body
+  background: #F2F2F2
+  .lm_vec
+    position: fixed
+    right: 0
+    bottom: 0
+    z-index: -1
+    .light
+      display: block
+    .dark
+      display: none
+.lm__header-logo
+  display: none
+
+.lm__dash-con
+  margin-top: 150px
+  @media (max-width:992px)
+    margin-top: 100px
+
+.z-index-n1
+  z-index: -1
+
+.z-index-3
+  z-index: 3
+
+.lm__menu-start
+  width: 350px !important
+  background: transparent
+  .offcanvas-header
+    z-index: 9
+
+// ::-webkit-scrollbar
+//   -webkit-appearance: none
+//   width: 2px
+//   height: 2px
+
+// ::-webkit-scrollbar-thumb
+//   border-radius: 4px
+//   background-color: rgb(227 161 48)
+//   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5)
+
+.lm_post-card
+  max-width: 730px
+  width: 100%
+  // margin: auto
+  .card
+    border-radius: 20px
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 15%)
+    .lm_post-tab
+      border: none
+      .nav-item
+        .nav-link
+          border: none
+          padding: 14px 34px
+          color: #252A36
+          border-bottom: 2px solid transparent
+          &.active
+            border-bottom: 2px solid #E3A130
+      .lm_post-input-wrap
+        textarea
+          border: none
+    .post-book.active
+      svg
+        path
+          fill: #E3A130
+          stroke: #E3A130
+
+    // .lm_post-input-emoji
+    //   span
+    //     display: none !important
+    //   form
+    //     .btn
+    //       display: none !important
+    //   .lm__cal
+    //     display: none !important
+
+    // textarea
+    //   &:focus
+    //     ~
+    //       .lm_post-input-emoji
+    //         span
+    //           display: block !important
+    //         form
+    //           display: block !important
+    //         .lm__cal
+    //           display: block !important
+  .morelink
+    color: #E3A130
+    font-family: var(--title-font)
+  .morecontent
+    span
+      display: none
+  .post_button
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+    .post_play-btn
+      border-radius: 50%
+      background: #101828
+      background-image: var(--gradient-two)
+      width: 80px
+      height: 80px
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 10px
+      cursor: pointer
+      @media (max-width:768px)
+        width: 50px
+        height: 50px
+        span
+          img
+            width: 100%
+            max-width: 60%
+            margin: 0 auto
+  .lm-drop
+    max-width: 185px
+    width: 100%
+    background: #fff
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%)
+    padding: 10px 05px
+    border-radius: 20px
+    &:focus
+      outline: none
+      border: none
+    .dropdown-toggle
+      display: flex
+      justify-content: space-between
+      width: 100%
+      align-items: center
+    .dropdown-menu
+      max-width: 185px
+      width: 100%
+      border: none
+      box-shadow: 0 3px 6px rgb(0 0 0 / 16%)
+  .lm_form-add
+    width: 50px
+    height: 50px
+    background: #fff
+    border-radius: 50%
+    flex: 0 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+
+  // Button
+  .lm_post-button
+    .btn
+      padding-top: 10px
+      padding-bottom: 10px
+    .lm__cal
+      span
+        border-radius: 50%
+        background: #101828
+        width: 42px
+        height: 42px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 10px
+  &.lm_card-post
+    .lm_card-post-logo
+      span
+        border-radius: 50%
+        background: #FFF
+        width: 76px
+        height: 76px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 10px
+        @media (max-width:576px )
+          width: 50px
+          height: 50px
+
+    .dropdown
+      .dropdown-toggle
+        &::after
+          display: none
+    .post_inner-card
+      // background-color: #E3A130 !important
+      border-radius: 15px
+      padding: 50px 65px !important
+      background-color: transparent !important
+      border: 1px solid #BEBEBE
+      padding: 40px !important
+
+      @media (max-width:992px)
+        padding: 30px 40px !important
+      @media (max-width:375px)
+        padding: 30px 15px !important
+      h6
+        max-width: 480px
+        width: 100%
+        margin: 0 auto
+      .btn
+        padding-left: 26px !important
+        padding-right: 26px !important
+        @media (max-width:576px)
+          padding-left: 16px !important
+          padding-right: 16px !important
+          font-size: 14px
+    .post_comment-reply
+      .avtar
+        border-radius: 50%
+        background: #FFF
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 10px
+        flex-shrink: 0
+    .post_comment-wrap
+      input
+        &:focus
+          border: none
+          outline: 1px solid #E3A130
+    .moretext
+      display: none
+    .dropdown
+      .open
+        >
+          .dropdown-menu
+            display: block
+            width: 100%
+            border: none
+            position: static
+
+      .dropdown-menu
+        min-width: 320px !important
+        width: 100% !important
+        border: none
+        box-shadow: 0 3px 6px rgb(0 0 0 / 16%)
+        @media (max-width:576px)
+          min-width: 250px !important
+        span.icon-md
+          border-radius: 50%
+          background: #E3A130
+          width: 40px
+          height: 40px
+          display: flex
+          justify-content: center
+          align-items: center
+          padding: 10px
+          flex: 0 0 auto
+        &.show
+          z-index: 2 !important
+
+        &.dropdown-menu-inner
+          min-width: 280px !important
+          max-width: 280px !important
+          width: 100% !important
+          background: #fff
+          box-shadow: 0 3px 6px rgb(0 0 0 / 16%)
+          margin: 0 auto
+          @media (max-width:576px)
+            min-width: 220px !important
+            max-width: 220px !important
+        .divider
+          height: 1px
+          margin: 9px auto
+          overflow: hidden
+          background-color: #e5e5e5
+          max-width: 290px
+          width: 100%
+        .dropdown-item
+          color: #252A36
+          font-size: 16px
+          padding: 8px 20px
+          &:hover
+            color: #000
+            background-color: #E3A130
+          &:active
+            color: #000
+            background-color: #E3A130 !important
+        h6
+          color: #000000
+          font-size: 20px
+      .toggler
+        >
+          a
+            &::after
+              display: block
+              content: " "
+              float: right
+              width: 0
+              height: 0
+              border-color: transparent
+              border-style: solid
+              border-width: 8px 8px 0px 8px
+              border-top-color: #000
+              margin-top: 7px
+              margin-right: -5px
+              border-radius: 5px
+.post_cmtt-show
+  display: none
+  transition: all 0.5s ease-in-out
+  &.active
+    display: block
+    transition: all 0.5s ease-in-out
+  .btn-cancle
+    min-width: auto
+.lm_rep
+  .post_comment-rep
+    display: none
+  &.active
+    .post_comment-rep
+      display: block
+    .rep-btn
+      display: none
+.lm__modal-4
+  max-width: 705px
+  width: 100%
+  @media ( max-width: 786px)
+    margin: 0 auto
+    max-width: 90%
+  .modal-body
+    background-image: var(--gradient-two)
+  .modal-header
+    border: 0
+    box-shadow: none
+    .btn-close
+      background-image: none
+  .lm__modal-4-vec
+    opacity: 0.06
+  h6
+    font-size: 20px
+  .btn-close
+    background-image: none
+    &:focus
+      outline: none
+      box-shadow: none
+  .btn--primary
+    padding: 8px 38px !important
+    border-radius: 5px
+  .lm-check-term
+    font-family: var(--title-font)
+
+.lm__modal-5
+  max-width: 545px
+  width: 100%
+  @media ( max-width: 576px)
+    margin: 0 auto
+    max-width: 90% !important
+
+  .modal-header
+    border: 0
+    box-shadow: none
+  .btn-close
+    &:focus
+      outline: none
+      box-shadow: none
+  textarea
+    border: 1px solid #252A36
+    border-radius: 5px
+    font-size: 18px
+    color: #252A36
+  &::placeholder
+    color: #252A36
+  .btn--primary
+    padding: 8px 38px !important
+    border-radius: 5px
+  .btn-close.close
+    background-image: none
+    &:focus
+      outline: none
+      box-shadow: none
+.lm_mxw50
+  max-width: 565px
+  width: 100%
+  margin: 0 auto
+  .lm_report
+    textarea
+      min-width: 300px !important
+      width: 100%
+      background: none
+      border: 1px solid #BEBEBE
+      border-radius: 5px
+      color: #fff
+    &::placeholder
+      color: #fff
+
+// Schedule Post
+.lm__modal-6
+  max-width: 705px
+  width: 100%
+  .modal-header
+    border: 0
+    box-shadow: none
+  .btn-close
+    background-image: none
+    &:focus
+      outline: none
+      box-shadow: none
+  .lm__form-input
+    label
+      font-family: var(--title-font) !important
+    input
+      font-family: var(--title-font) !important
+  h6
+    font-size: 20px !important
+// events
+.lm_upcoming-events
+  max-width: 375px
+  width: 100%
+  margin-left: 22px
+  @media (max-width:768px)
+    max-width: 100%
+    margin-left: 0px
+
+  .card
+    border-radius: 20px
+    max-height: 450px
+    overflow: auto
+  h6
+    font-size: 20px !important
+    @media (max-width:768px)
+      font-size: 16px !important
+  .ev_date
+    width: 100%
+    max-width: 100px
+    height: 100px
+    white-space: nowrap
+    flex-shrink: 0
+    img
+      height: 100%
+  .lm_mx-25
+    max-width: 295px
+    width: 100%
+    @media (max-width:768px)
+      max-width: 100%
+  .lm_rsvp
+    font-size: 10px
+    border: 1px solid #BEBFC3
+    padding: 2px 10px
+    display: flex
+    text-align: center
+    justify-content: center
+    align-items: center
+    border-radius: 3px
+
+.lm_upcoming-events
+  &.lm_member-online
+    .card
+      .d-flex.flex-wrap
+        width: 100%
+        overflow: auto
+        flex-wrap: nowrap !important
+
+.lm__form-input
+  label
+    font-size: 20px
+    flex-shrink: 1
+    color: #252A36
+    @media (max-width:576px)
+      font-size: 14px
+  .form-control-icon
+    width: 100%
+    .icon
+      padding-left: 3.438rem
+      max-width: 260px !important
+      width: 100% !important
+    input
+      font-family: var(--title-font) !important
+    span
+      position: absolute
+      top: 50%
+      left: 33px
+      transform: translate(-50%, -50%)
+  textarea.form-control
+    height: 200px
+
+body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+.banner
+  // height: 100vh 
+  width: 100%
+  overflow: hidden
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  .video
+    position: absolute
+    top: 0
+    left: 0
+    object-fit: cover
+    width: 100%
+    height: 100%
+  .content
+    position: relative
+    z-index: 1
+    max-width: 50%
+    margin: 0 auto
+    text-align: center
+    h1
+      font-size: 4.5em
+      color: #fff
+    p
+      font-size: 1.7em
+      color: #fff
+.button
+  background-color: #4CAF50
+  border: none
+  color: white
+  padding: 30px 60px
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  font-size: 40px
+  margin: 4px 2px
+  cursor: pointer
+.header-overlay
+  position: absolute
+  height: 100vh
+  width: 100vw
+  top: 0
+  left: 0
+  z-index: 1
+  background: #225470
+  opacity: 0.55
+
+.img-1
+  display: block
+.img-2
+  display: none
+
+.play
+  .img-1
+    display: none
+  .img-2
+    display: block
+// .lm_post-card
+.select2
+  &.select2-container
+    max-width: 185px !important
+    width: 100% !important
+    background: #fff !important
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%) !important
+    padding: 2px 5px !important
+    border-radius: 20px !important
+    border: none !important
+    overflow: hidden
+.select2-container--default
+  .select2-selection--single
+    border: none
+    .select2-selection__arrow
+      top: 50%
+      transform: translate(-50%, -50%)
+  .select2-results__option--highlighted
+    &.select2-results__option--selectable
+      background: none
+      color: #000
+span
+  &.select2-dropdown
+    &.select2-dropdown--below
+      border: none
+      border-radius: 20px !important
+      overflow: hidden
+      border-bottom-right-radius: 0 !important
+      border-bottom-left-radius: 0 !important
+      // margin-top: -138px
+      z-index: 1
+      position: absolute
+      top: 100%
+      width: 100%
+      border-radius: 0 0 0.313rem 0.313rem
+      left: 0
+      right: 0
+      box-shadow: 1px -6px 30px rgb(23 25 27 / 7%)
+  &.select2
+    &.select2-container
+      &.select2-container--default
+        &.select2-container--below
+          &.select2-container--focus
+            &.select2-container--open
+              border-top-left-radius: 0 !important
+              border-top-right-radius: 0 !important
+ul#select2-select_box-results
+  li
+    &:hover
+      background: none
+      color: #000
+
+input
+  &.select2-search__field
+    // display: none
+    box-shadow: 0px 0px 8px 0px #00000026 !important
+    border-radius: 10px
+    outline: none !important
+span
+  &.selection
+    display: flex
+.select2-search--dropdown
+  padding: 0
+
+.select2-container--default .select2-results__option--selected
+  background-color: transparent !important
+// .select2-container--default
+//   .select2-results__option--selected
+//     background-color: none !important
+
+#a.hide
+  .lm__form-input
+    label
+      font-size: 16px !important
+      font-family: var(--title-font) !important
+
+.post_options,
+.post_percentage
+  background: var(--gradient-two)
+  padding: 15px 30px
+  max-width: 500px
+  width: 100%
+  margin: auto
+  .form-check-label
+    cursor: pointer
+    .h6
+      font-size: 18px
+  .lm__form-input.radio
+    border: 1px solid #e3a130
+    border-radius: 5px
+    padding: 2px 10px
+    .form-check-input:checked
+      box-shadow: inset 0px 0px 0px 2px #0b2539 !important
+
+.post_percentage
+  background: var(--gradient-two)
+  padding: 15px 30px
+  max-width: 350px
+  width: 100%
+  margin: auto
+  .lm__form-input.radio
+    border: none
+
+.lm_post-card.lm_card-post .post_inner-card
+  &.card-border-light
+    background-color: transparent !important
+    border: 1px solid #BEBEBE
+    padding: 40px !important
+    .post_options
+      background: transparent !important
+      width: 100% !important
+      max-width: 100% !important
+      padding: 0 !important
+    h6
+      width: 100% !important
+      max-width: 100% !important
+      text-align: start
+    .progress
+      // background: linear-gradient(0deg, #F2F2F2, #F2F2F2), linear-gradient(90deg, #DEDEDE 6.77%, #F2F2F2 6.78%)
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15)
+      background: transparent
+      cursor: pointer
+    .progress-bar
+      background: #DEDEDE
+      border: 1px solid #F2F2F2
+      border-radius: 5px 0 0 5px
+      transition: all 0.6s ease
+      cursor: pointer
+      &.voted
+        // background: #E3A130 !important
+        // background: linear-gradient(207.33deg, #0E3049 0.74%, #000000 100%)
+        background: #01152B
+        transition: all 0.6s ease
+        .title-font.h6
+          color: #ffffff
+    .title-font.h6
+      color: #01152B
+
+.progress-bar[style="width: 100%"]
+  border-radius: 5px !important
+
+.lm_post-input-emoji
+  span.select2.select2-container.select2-container--default
+    max-width: 185px !important
+    border-radius: 30px !important
+.lm_upcoming-events
+  .tab-content
+    .card
+      max-height: 350px
+      overflow: scroll
+body
+  &.body
+    .lm_post-card.lm_card-post .lm_card-post-logo span
+      background: #01152b
+
+@media (max-width:1400px)
+  .lm_post-card
+    max-width: 580px
+
+  // .col.col-md-5.col-xxl-4.mb-4
+  //   max-width: 550px
+
+@media (max-width:1200px)
+  .lm_post-card
+    max-width: 480px
+
+  // .col.col-md-5.col-xxl-4.mb-4
+  //   max-width: 380px
+  .lm_upcoming-events
+    margin-left: 0
+
+  .lm__dash
+    width: 250px
+    padding: 15px
+
+    .lm__dash-con .container,
+    .dash__header .container
+      padding-left: 300px
+
+@media (max-width:991px)
+  .lm_post-card
+    max-width: 100%
+    /* flex:100%; */
+
+  .col.col-md-5.col-xxl-4.mb-4
+    /* max-width: 100%; */
+    flex: 100%
+
+  .lm__dash
+    width: 250px
+    padding: 15px
+
+    .lm__dash-con .container,
+    .dash__header .container
+      padding-left: 50px
+
+@media (max-width:768px)
+  .lm_post-card
+    max-width: 100%
+    flex: 100%
+
+  .col.col-md-5.col-xxl-4.mb-4
+    max-width: 100%
+    flex: 100%
+
+  .lm__dash
+    width: 250px
+    padding: 15px
+
+    .lm__dash-con .container,
+    .dash__header .container
+      padding-left: 50px
+
+.fr-video.fr-dvf.fr-draggable .fr-draggable
+  width: 100% !important
+  border-radius: 10px
+  max-height: 380px
+
+body
+  &.dark
+    .progress-bar.voted
+      background: #E3A130 !important
+    .emoji-items-wrap1
+      background: #01152b
+      padding: 5px 2px 5px 5px
+    .lm_post-card.lm_card-post .post_inner-card.card-border-light .title-font.h6
+      color: #01152b
+    .lm_post-card.lm_card-post .post_inner-card.card-border-light .progress
+      background: #fff
+    .progress-bar.voted + .d-flex.w-100.justify-content-between .title-font.h6
+      color: #01152b
+
+.lm-featured-post
+  position: relative
+  .card
+    padding: 10px
+    border-radius: 15px
+    border: 2px solid #0D2137 !important
+    transition: all 0.5s ease-in-out
+    .card-img
+      img
+        border-radius: 10px
+        overflow: hidden
+        width: 100%
+        @media ( max-width: 768px )
+          max-height: 150px
+
+    .card-body
+      height: 100%
+      align-items: center
+    //   .fe-con
+    //     display: inline
+    //     -webkit-line-clamp: 2
+    //     text-overflow: ellipsis
+    //     overflow: hidden
+    //     display: -webkit-box
+    //     -webkit-box-orient: vertical
+    //     word-wrap: break-word
+    .lm_card-post-logo
+      span
+        border-radius: 50%
+        background: #FFF
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+    &:hover
+      border-color: #e3a130 !important
+  .swiper
+    width: 100%
+    height: 100%
+    &-slide
+      // text-align: center
+      // font-size: 18px
+      // background: #fff
+      // display: flex
+      // justify-content: center
+      // align-items: center
+      height: auto !important
+      &-slide img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+  .lm-featured-next,
+  .lm-featured-prev
+    width: 30px
+    height: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #E3A130
+    transition: 0.5s all ease-in-out
+    border-radius: 50%
+    top: 20px
+    z-index: 1
+    &:hover
+      background: #01152b
+    &::after
+      display: none
+    svg
+      width: 14px
+      height: 14px
+  .lm-featured-prev
+    left: auto
+    right: 60px
+
+.lm_upcoming-events.lm-featured-post
+  .swiper.mySwiper-course
+    .card
+      border: none !important
+      box-shadow: none !important
+  .lm-featured-next,
+  .lm-featured-prev
+    top: 30px
+  p.text-dark.d-block.mb-1.title-font
+    display: -webkit-box !important
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
+    overflow: hidden
+
+body.dark
+  .lm-featured-post
+    svg
+      path
+        fill: #fff
+    .card
+      border: 2px solid #e3a130 !important
+      svg
+        path
+          fill: #fff
+    .mySwiper-post  .card:hover
+      border: 2px solid #ffffff !important
+  .lm-featured-next,
+  .lm-featured-prev
+    &:hover
+      background: #03090d
+  .lm_upcoming-events.lm-featured-post
+    .card
+      border: 2px solid #e3a130 !important
+      svg
+        path
+          fill: #fff
+  .pe-1
+    svg
+      path
+        stroke: none !important
+        fill: #fff
+  .swiper-button-prev.lm-featured-prev ,
+  .swiper-button-next.lm-featured-next
+    svg path
+      fill: none !important
+      stroke: #fff
+
+.swiper
+  .swiper-wrapper
+    transition-timing-function: linear
+
+.lm-featured-post .mySwiper-post  .card:hover
+  border: 2px solid #e3a130 !important
+
+.lm_upcoming-events
+  .text-dark.d-block.mb-1.title-font
+    a
+      display: -webkit-box !important
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+      overflow: hidden
+
+.mb-0.fe-con.text-sm-16
+  color: #101828
+body.dark
+ .mb-0.fe-con.text-sm-16
+  color: #ffffff

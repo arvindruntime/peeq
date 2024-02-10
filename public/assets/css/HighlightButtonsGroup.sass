@@ -1,0 +1,1022 @@
+// body
+//   background: #F2F2F2
+//   .lm_vec
+//     position: fixed
+//     right: 0
+//     bottom: 0
+//     .light
+//       display: block
+//     .dark
+//       display: none
+// .lm__header-logo
+//   display: none
+
+// .buttons-group
+//   display: flex
+//   flex-direction: column
+//   align-items: center
+
+//   &__comment-btn
+//     border: 0 none
+//     background: red
+//     color: white
+//     border-radius: 2px
+//     z-index: 500
+
+//   &__down-arrow-tip
+//     width: 12px
+//     height: 12px
+//     margin-top: -2px
+//     background: black
+//     z-index: 500
+//     clip-path: polygon(0% 0%, 50% 50%, 100% 0%)
+
+// .lm_pdf
+//   margin-top: 50px !important
+//   .pdf-title
+//     margin-bottom: 30px
+//     h3
+//       margin-bottom: 0
+//   .container
+//     padding-left: 100px
+//     padding-right: 100px
+//     @media ( max-width: 1400px )
+//       padding-left: 40px
+//       padding-right: 40px
+//     @media ( max-width: 768px )
+//       padding-left: 15px
+//       padding-right: 15px
+//   .lm_pdf-card.card
+//     border-radius: 20px
+//     // overflow: hidden
+//     position: relative
+//     border: 0
+//     .card-flex
+//       @media ( max-width: 786px )
+//         flex-direction: column-reverse
+//     .left-main
+//       height: calc(100vh - 310px)
+//       overflow: scroll
+//       position: relative
+//       z-index: 2
+//       padding: 50px
+//       @media ( max-width: 786px )
+//         height: calc(100vh - 200px)
+
+//     .lm_pdf-left
+//       background: #252A36
+//       // padding: 50px
+//       max-width: 860px
+//       width: 100%
+//       border-radius: 20px 0 0 20px
+//       @media ( max-width: 768px )
+//         border-radius: 0 0 20px 20px
+//         // padding: 30px
+//       h3
+//         font-size: 30px
+//         margin-bottom: 40px
+//         @media ( max-width: 768px )
+//           font-size: 25px
+//           margin-bottom: 15px
+//       h5
+//         font-size: 26px
+//         margin-bottom: 10px
+//         @media ( max-width: 768px )
+//           font-size: 20px
+//       .pdf-left_list
+//         ul
+//           list-style: disc
+//           margin-top: 10px
+//           padding-left: 35px
+//           li
+//             color: #fff
+//             margin-bottom: 10px
+//       .lm-pdf-addi
+//         p
+//           margin-bottom: 10px
+//     .logo_vec
+//       position: absolute
+//       left: 0
+//       transform: translateY(-50%)!important
+//       top: 50%
+//     .pdf-left-img
+//       margin: 40px 0
+
+//     .lm_pdf-right
+//       max-width: 860px
+//       width: 100%
+//       background-position: center
+//       background-repeat: no-repeat
+//       background-size: cover
+//       border-radius: 0 20px 20px 0
+//       @media ( max-width: 768px )
+//         border-radius: 20px 20px 0 0
+//       .lm_spiral
+//         position: absolute
+//         top: -10px
+//         right: 26px
+//         width: 46%
+//         @media ( max-width: 1400px )
+//           width: 43%
+//         @media ( max-width: 768px )
+//           width: 92%
+//         @media ( max-width: 576px )
+//           width: 84%
+//           top: -4px
+//       .lm_right
+//         padding: 60px 50px 0px 50px
+//         @media ( max-width: 576px )
+//           padding: 35px 20px 0px 20px
+//         .lm_right-title
+//           h3
+//             color: #131A2C
+//       .pdf-date
+//         margin-top: 10px
+//         span
+//           // background: #E2A12D
+//           color: #fff
+//           font-family: Georgia, 'Times New Roman', Times, serif
+//           font-size: 24px
+//           // clip-path: polygon(0 0, 80% 0, 90% 0%, 100% 50%, 90% 100%, 80% 100%, 0 100%)
+//           // width: 260px
+//           background-image: url("../images/date-bg.png")
+//           background-repeat: no-repeat
+//           display: block
+//           border-radius: 5px 0 0 5px
+//           padding: 5px
+//           background-size: contain
+//           padding-left: 10px
+//           @media ( max-width: 768px )
+//             font-size: 16px
+//       .pdf_con
+//         height: calc(100vh - 350px)
+//         overflow-y: scroll
+//         padding: 20px 50px 10px 10px
+//         @media ( max-width: 768px )
+//           height: calc(100vh - 300px)
+//           padding: 20px
+//           padding-left: 0
+//         .ce-paragraph.cdx-block
+//           font-family: var(--kalam-font) !important
+//           font-size: 22px
+//           font-weight: 300
+//           color: #000000
+//           padding: 0
+//           @media ( max-width: 768px )
+//             font-size: 18px
+//         .pdf-padd
+//           padding-left: 40px
+//           @media ( max-width: 576px )
+//             padding-left: 20px
+//           .accordion
+//             border-left: 5px solid #E2A12D
+//             overflow: hidden
+//             border-radius: 10px
+//             .accordion-item
+//               background: #FFEAC5
+//               border: 0
+//             .accordion-button
+//               box-shadow: none
+//               background: #FFEAC5
+//               outline: none
+//               color: #252A36
+//               font-size: 22px
+//               font-weight: 600
+//               @media ( max-width: 768px )
+//                 font-size: 18px
+//               span
+//                 position: absolute
+//                 right: 50px
+//                 opacity: 0
+//                 visibility: hidden
+//                 transition: all 0.6s ease-in-out
+//               &:hover
+//                 span
+//                   opacity: 1
+//                   visibility: visible
+//               &::after
+//                 background-image: url("../images/arrow-up.svg") !important
+//               &:not(.collapsed)
+//                 &::after
+//                   background-image: url("../images/arrow-up.svg") !important
+
+//               // .accordion-button:not(.collapsed)::after
+//           .pdf-img
+//             border-radius: 10px
+//             overflow: hidden
+// .lm_coches
+//   padding-top: 35px
+//   @media ( max-width: 768px )
+//     flex-direction: column
+//     align-items: flex-start !important
+//   .lm_coches-con
+//     display: flex
+//     flex-direction: row
+//     align-items: center
+//     padding: 10px
+//     background: #FFFFFF
+//     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15)
+//     border-radius: 50px
+//     .btn-sm
+//       padding: 5px 20px
+//       min-width: auto
+// span.select2.select2-container.select2-container--default
+//   max-width: 140px !important
+//   border-radius: 60px !important
+
+// span.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus.select2-container--open
+//   border-radius: 30px 30px 0 0!important
+//   display: flex
+//   align-items: center
+
+// span.select2.select2-container.select2-container--default.select2-container--below
+//   display: flex
+//   align-items: center
+
+// span.selection
+//   display: flex !important
+//   align-items: center !important
+
+// span.select2.select2-container.select2-container--default
+//   display: flex
+
+// .ce-header
+//   display: none
+// .codex-editor__redactor
+//   padding-bottom: 0 !important
+// .ce-example
+//   margin-top: 0
+//   margin-left: 0
+
+// .pdf-padd 
+//   > 
+//     div
+//       &:not(:last-child)
+//         margin-bottom: 20px !important
+
+// #exampleModal-audit
+//   .lm__modal-5
+//     max-width: 725px
+//     width: 100%
+//     .btn
+//       font-size: 22px !important
+//       border-radius: 50px !important
+//       padding: 10px 80px !important
+body
+  background: #F2F2F2
+  .lm_vec
+    position: fixed
+    right: 0
+    bottom: 0
+    .light
+      display: block
+    .dark
+      display: none
+.lm__header-logo
+  display: none
+
+.buttons-group
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  &__comment-btn
+    border: 0 none
+    background: red
+    color: white
+    border-radius: 2px
+    z-index: 500
+
+  &__down-arrow-tip
+    width: 12px
+    height: 12px
+    margin-top: -2px
+    background: black
+    z-index: 500
+    clip-path: polygon(0% 0%, 50% 50%, 100% 0%)
+
+.lm__dash-con.lm__event-con.lm_pdf
+  margin-top: 0px !important
+  .pdf-title
+    margin-bottom: 30px
+    h3
+      margin-bottom: 0
+  .container
+    padding-left: 100px
+    padding-right: 100px
+    @media ( max-width: 1400px )
+      padding-left: 40px
+      padding-right: 40px
+    @media ( max-width: 768px )
+      padding-left: 15px
+      padding-right: 15px
+  .lm_pdf-card.card
+    border-radius: 20px
+    overflow: hidden
+    position: relative
+    border: 0
+    background-color: transparent
+    .card-flex
+      @media ( max-width: 786px )
+        flex-direction: column !important
+    .left-main
+      // height: calc(100vh - 120px)
+      overflow: hidden
+      position: relative
+      z-index: 2
+      // padding: 50px
+      @media ( max-width: 786px )
+        padding: 20px
+    .lm_pdf-left
+      background: #ffffff
+      // padding: 50px
+      // max-width: 860px
+      // width: 100%
+      // border-right: 15px solid #fff
+      // border-radius: 20px 0 0 20px
+      border-radius: 16px 0 0 16px
+      @media (max-width: 768px)
+        border-right: 0
+        // padding: 30px
+      h3
+        font-size: 30px
+        margin-bottom: 40px
+        @media ( max-width: 768px )
+          font-size: 25px
+          margin-bottom: 15px
+        @media ( max-width: 575px )
+          font-size: 20px
+          margin-bottom: 15px
+      h5
+        font-size: 26px
+        margin-bottom: 10px
+        @media ( max-width: 768px )
+          font-size: 20px
+      .pdf-left_list
+        ul
+          list-style: disc
+          margin-top: 10px
+          padding-left: 35px
+          @media (max-width: 575px)
+            padding-left: 15px
+
+          li
+            color: #fff
+            margin-bottom: 10px
+          a
+            display: inline
+            background-color: #e3a130
+      .lm-pdf-addi
+        p
+          margin-bottom: 10px
+    .logo_vec
+      position: absolute
+      left: 0
+      transform: translateY(-50%)!important
+      top: 50%
+    .pdf-left-img
+      margin: 40px 0
+
+    .lm_pdf-right
+      // max-width: 860px
+      // width: 100%
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      background-image: url("../images/pdf-right.jpg") !important
+      // border-left: 15px solid #fff
+      border-radius: 0 16px 16px 0
+      // border-left: 2px dashed #cbcbcb
+      @media (max-width: 768px)
+        border-left: 0
+      .lm_right
+        padding: 60px 50px 0px 50px
+        @media ( max-width: 767px )
+          padding: 25px 20px 0px 20px
+        .lm_right-title
+          h3
+            color: #131A2C
+      .pdf-date
+        margin-top: 10px
+        span
+          // background: #E2A12D
+          color: #fff
+          font-family: Georgia, 'Times New Roman', Times, serif
+          font-size: 24px
+          // clip-path: polygon(0 0, 80% 0, 90% 0%, 100% 50%, 90% 100%, 80% 100%, 0 100%)
+          // width: 260px
+          background-image: url("../images/date-bg.png")
+          background-repeat: no-repeat
+          display: inline-block
+          border-radius: 5px 0 0 5px
+          padding: 5px 35px 5px 12px
+          background-size: 100% 100%
+          @media ( max-width: 768px )
+            font-size: 16px
+      .pdf_con
+        max-height: 710px
+        overflow-y: scroll
+        padding: 20px 20px 60px 35px
+        // padding-bottom: 100px
+        @media ( max-width: 768px )
+          height: calc(100vh - 300px)
+          padding: 20px
+          padding-left: 0
+        .ce-paragraph.cdx-block
+          font-family: var(--kalam-font) !important
+          font-size: 22px
+          font-weight: 300
+          color: #000000
+          padding: 0
+          @media ( max-width: 768px )
+            font-size: 18px
+        .pdf-padd
+          // padding-left: 40px
+          @media ( max-width: 767px )
+            padding-left: 20px
+          .accordion
+            border-left: 5px solid #E2A12D
+            overflow: hidden
+            border-radius: 10px
+            .accordion-item
+              background: #FFEAC5
+              border: 0
+            .accordion-button
+              box-shadow: none
+              background: #FFEAC5
+              outline: none
+              color: #252A36
+              font-size: 22px
+              font-weight: 600
+              @media ( max-width: 768px )
+                font-size: 18px
+              span
+                position: absolute
+                right: 50px
+                opacity: 0
+                visibility: hidden
+                transition: all 0.6s ease-in-out
+              &:hover
+                span
+                  opacity: 1
+                  visibility: visible
+              &::after
+                background-image: url("../images/arrow-up.svg") !important
+              &:not(.collapsed)
+                &::after
+                  background-image: url("../images/arrow-up.svg") !important
+
+              // .accordion-button:not(.collapsed)::after
+          .pdf-img
+            border-radius: 10px
+            overflow: hidden
+.lm_spiral
+  position: absolute
+  right: 50%
+  width: 50px
+  top: 50%
+  transform: translate(50% , -50%)
+  overflow: hidden
+  max-height: 620px
+  z-index: 99
+  @media (max-width: 768px)
+    display: none
+.lm_coches
+  padding-top: 35px
+  @media ( max-width: 768px )
+    flex-direction: column
+    align-items: flex-start !important
+  .lm_coches-con
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 10px
+    background: #FFFFFF
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15)
+    border-radius: 50px
+    .btn-sm
+      padding: 5px 20px
+      min-width: auto
+    .avtar-45
+      overflow: hidden
+      margin-right: 8px
+span.select2.select2-container.select2-container--default
+  max-width: 140px !important
+  border-radius: 60px !important
+
+span.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus.select2-container--open
+  border-radius: 30px 30px 0 0!important
+  display: flex
+  align-items: center
+
+span.select2.select2-container.select2-container--default.select2-container--below
+  display: flex
+  align-items: center
+
+span.selection
+  display: flex !important
+  align-items: center !important
+
+span.select2.select2-container.select2-container--default
+  display: flex
+
+.ce-header
+  display: none
+.codex-editor__redactor
+  padding-bottom: 0 !important
+.ce-example
+  margin-top: 0
+  margin-left: 0
+
+.pdf-padd
+  >
+    div
+      &:not(:last-child)
+        margin-bottom: 20px !important
+
+#exampleModal-audit
+  .lm__modal-5
+    max-width: 725px
+    width: 100%
+    .btn
+      font-size: 22px !important
+      border-radius: 50px !important
+      padding: 10px 80px !important
+
+/*25-07-2023*/
+.lm_pdf
+  .lm_pdf-left
+    .add-note-button
+      position: absolute
+      top: -35px
+      width: 105px
+      right: 50%
+      transform: translateX(50%)
+      height: 30px
+      background-color: #e3a22a
+      color: #fff
+      border: 0
+      font-size: 12px
+      text-align: left
+      padding: 8px 11px
+      font-weight: 800
+      line-height: 1.2
+      border-radius: 5px
+      &::after
+        content: ''
+        background-size: 20px
+        background-image: url(../images/add-note.svg)
+        background-repeat: no-repeat
+        width: 20px
+        height: 20px
+        position: absolute
+        right: 11px
+        top: 5px
+    span
+      position: relative
+      // background-color: #ffffff
+    .highlight
+      background-color: #e2a12d
+      color: #ffffff
+      display: inline
+    .anchor-text
+      color: #ffffff
+      &:hover
+        color: inherit
+  .lm_pdf-right
+    background-image: url("../images/pdf-right.jpg") !important
+    .note
+      background: #FFEAC5
+      padding: 16px 20px
+      border-radius: 10px
+      box-shadow: inset 5px 0 #e2a12d
+      position: relative
+      h2
+        cursor: pointer
+        font-size: 20px
+        font-weight: bold
+        margin-bottom: 0
+        padding-right: 60px
+        &:after
+          content: ''
+          background-image: url(../images/arrow-up.svg)
+          height: 20px
+          width: 20px
+          position: absolute
+          right: 20px
+          top: 20px
+          background-position: center
+          background-size: 20px
+    .note-content
+      textarea
+        background: none
+        color: #000000
+        padding: 10px 0
+        border-radius: 0
+        resize: none
+        font-family: 'Kalam', cursive
+      span
+        display: block
+        text-align: right
+        font-size: 12px
+        color: #7C7F86
+      .delete-button
+        background-size: 20px
+        border: 0
+        background-image: url(../images/dlt.svg)
+        background-repeat: no-repeat
+        width: 20px
+        height: 20px
+        background-color: transparent
+        position: absolute
+        right: 50px
+        top: 20px
+.lm_pdf-main
+  background: #252A36
+
+.lm__modal-overlay
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 9999
+  .lm__modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: #fff
+    padding: 25px 40px
+    border-radius: 4px
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2)
+    display: block
+    width: auto
+    height: auto
+  .lm__modal-buttons
+    display: flex
+    justify-content: flex-end
+    margin-top: 20px
+  .lm__modal-buttons button
+    margin-left: 10px
+.flip-button
+  svg
+    path
+      fill: #E3A130
+
+/*08-08-2023*/
+.lm__checklist
+  p
+    font-family: var(--kalam-font)
+  .lm__listchecked
+    flex: 0 0 88px
+    max-width: 88px
+    cursor: pointer
+    @media (max-width: 992px)
+      flex: 0 0 50px
+      max-width: 50px
+    img
+      display: none
+      user-select: none
+    &.active
+      img
+        display: block
+  .lm__listtext
+    flex: 0 0 calc(100% - (88px + 3rem))
+    max-width: calc(100% - (88px + 3rem))
+    @media (max-width: 992px)
+      flex: 0 0 calc(100% - (50px + 1rem))
+      max-width: calc(100% - (50px + 1rem))
+  .lm__listchecked, .lm__listtext
+    background-color: #FFD3C5
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.10)
+
+.lm__consumption
+  .lm__day
+    flex: 0 0 calc(50% - 0.75rem)
+    max-width: calc(50% - 0.75rem)
+    @media (max-width: 767px)
+      flex: 0 0 100%
+      max-width: 100%
+.lm__consumption-edit, .lm__task-editor
+  textarea
+    resize: none
+    min-height: 120px
+    background-color: #FFEAC5
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.10)
+    font-family: var(--kalam-font)
+
+// .pdf-editor .banner
+//   overflow: visible
+//   display: block
+//   img.fr-fic.fr-dib
+//     // max-height: 100% !important
+//     width: 1920px !important
+
+// .froala-editor
+//   img.fr-fic.fr-dib
+//     width: 100% !important
+
+// .banner
+//   img
+//     width: 1920px !important
+
+// img[style="width: 130px;"]
+//   width: 130px !important
+
+.pdf-editor img.fr-fic.fr-dib.fr-fil.fr-draggable
+  width: 130px !important
+
+.pdf-editor .banner
+  width: 1920px !important
+  overflow: hidden
+  display: block !important
+  img.fr-fic.fr-dib
+    overflow: hidden
+    max-height: 750px !important
+    object-fit: cover !important
+
+.left-main img[style="width: 130px;"]
+  width: 130px!important
+
+p.banner
+  // width: 850px
+  height: 750px
+  top: 0px
+  position: absolute
+  z-index: -1
+
+p.banner img.fr-fic.fr-dib
+  // width: 850px !important
+  max-height: 730px
+  object-fit: cover
+  border-radius: 0 !important
+
+span[style="font-size: 30px; color: red;"]
+  width: 100%
+  height: 100%
+
+td span img 
+  display: inline-block !important
+
+.fr-fic.fr-dii
+  display: inline-block !important
+
+/*25-07-2023*/
+.lm_pdf
+  .lm_pdf-left
+    .add-note-button
+      position: absolute
+      top: -35px
+      width: 105px
+      right: 50%
+      transform: translateX(50%)
+      height: 30px
+      // background-color: #ffffff
+      border: 0
+      font-size: 12px
+      text-align: left
+      padding: 8px 11px
+      font-weight: 800
+      line-height: 1.2
+      border-radius: 5px
+      &::after
+        content: ''
+        background-size: 20px
+        background-image: url(../images/add-note.svg)
+        background-repeat: no-repeat
+        width: 20px
+        height: 20px
+        position: absolute
+        right: 11px
+        top: 5px
+    span
+      position: relative
+      // background-color: #e2a12d
+    .highlight
+      background-color: #e2a12d
+      color: #ffffff
+      display: inline
+    .anchor-text
+      color: #ffffff
+      display: inline
+      background-color: #e3a22a
+      &:hover
+        color: inherit
+  .lm_pdf-right
+    .note
+      background: #FFEAC5
+      padding: 16px 20px
+      border-radius: 10px
+      box-shadow: inset 5px 0 #e2a12d
+      position: relative
+      margin-bottom: 15px
+      h2
+        cursor: pointer
+        font-size: 20px
+        font-weight: bold
+        margin-bottom: 0
+        padding-right: 60px
+        &:after
+          content: ''
+          background-image: url(../images/arrow-up.svg)
+          height: 20px
+          width: 20px
+          position: absolute
+          right: 20px
+          top: 20px
+          background-position: center
+          background-size: 20px
+    .note-content
+      textarea
+        background: none
+        color: #000000
+        padding: 10px 0
+        border-radius: 0
+        resize: none
+        font-family: 'Kalam', cursive
+      span
+        display: block
+        text-align: right
+        font-size: 12px
+        color: #7C7F86
+      .delete-button
+        background-size: 20px
+        border: 0
+        background-image: url(../images/dlt.svg)
+        background-repeat: no-repeat
+        width: 20px
+        height: 20px
+        background-color: transparent
+        position: absolute
+        right: 50px
+        top: 20px
+.lm_pdf-main
+  background: #252A36
+  border-radius: 0 20px 20px 0
+
+.lm__modal-overlay
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 9999
+  .lm__modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: #fff
+    padding: 25px 40px
+    border-radius: 4px
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2)
+    display: block
+    width: auto
+    height: auto
+  .lm__modal-buttons
+    display: flex
+    justify-content: flex-end
+    margin-top: 20px
+  .lm__modal-buttons button
+    margin-left: 10px
+.flip-button
+  svg
+    path
+      fill: #E3A130
+
+/*08-08-2023*/
+.lm__checklist
+  p
+    font-family: var(--kalam-font)
+  .lm__listchecked
+    flex: 0 0 88px
+    max-width: 88px
+    cursor: pointer
+    @media (max-width: 992px)
+      flex: 0 0 50px
+      max-width: 50px
+    img
+      display: none !important
+      user-select: none !important
+    &.active
+      img
+        display: block !important
+  .lm__listtext
+    flex: 0 0 calc(100% - (88px + 3rem))
+    max-width: calc(100% - (88px + 3rem))
+    @media (max-width: 992px)
+      flex: 0 0 calc(100% - (50px + 1rem))
+      max-width: calc(100% - (50px + 1rem))
+  .lm__listchecked, .lm__listtext
+    background-color: #FFD3C5
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.10)
+
+.lm__consumption
+  .lm__day
+    flex: 0 0 calc(50% - 0.75rem)
+    max-width: calc(50% - 0.75rem)
+    @media (max-width: 767px)
+      flex: 0 0 100%
+      max-width: 100%
+.lm__consumption-edit, .lm__task-editor
+  textarea
+    resize: none
+    min-height: 120px
+    background-color: #FFEAC5
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.10)
+    font-family: var(--kalam-font)
+
+/*26-09-2023*/
+.lm__interactive-audio
+  .dropdown-menu
+    &.show
+      z-index: 999 !important
+  audio
+    width: 100%
+
+h1,h2,h3,h4,h5,h6
+  line-height: inherit
+  // @media ( max-width: 1400px )
+  //   line-height: 1.1
+h1
+  font-size: 18px
+
+img[style="width: 50px;"]
+  width: 30px !important
+
+p.banner
+  img
+    width: 588px !important
+    height: 320px !important
+    position: absolute
+    top: 0
+    z-index: -1
+
+.rounded-pill
+  border-radius: 100%
+
+.shadow
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1490196078) !important
+
+.dropdown-custom
+  background-color: #fff
+  border-radius: 100px
+  padding: 8px
+  display: inline-flex
+  justify-content: end
+  margin: auto
+
+.lm__interactive-audio .dropdown-menu
+  visibility: hidden
+  opacity: 0
+  position: absolute
+  inset: 0px 0px auto auto
+  margin: 0px
+  transform: translate(0px, 44px)
+  background: #ffff
+  width: 350px !important
+  height: auto !important
+  padding: 15px
+  top: 0 !important
+  z-index: 99 !important
+
+  &.show-menu
+    visibility: visible
+    opacity: 1
+    z-index: 99
+    top: 20px !important
+.lm__task-editor
+  textarea
+    border-radius: 20px !important
+    margin-bottom: 15px
+    padding-bottom: 10px
+
+.lm__book
+  overflow: hidden
+  border-radius: 20px
+  margin-right: 40px !important
+
+.lm_pdf-card
+  h1,h2,p,span,tr,td,th
+    font-family: 'PlayfairDisplay', sans-serif !important
+  .lm__consumption-edit, .lm__task-editor
+    textarea
+      font-family: 'PlayfairDisplay', sans-serif !important
+
+.gap-4
+  gap: 15px
+
+.left-main.fr-view p
+  padding: 0 22px
+
+h1.fr-text-uppercase + a
+  font-size: 30px
+  width: 340px !important
+  text-transform: uppercase
+  display: inline-block !important
+  margin-left: 25px

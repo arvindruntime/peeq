@@ -1,0 +1,311 @@
+// @import "./variable"
+
+body
+  background: #F2F2F2
+  .lm_vec
+    position: fixed
+    right: 0
+    bottom: 0
+    z-index: -1
+    .light
+      display: block
+    .dark
+      display: none
+.lm__header-logo
+  display: none
+
+.lm_session-create
+  .create-list-admin
+    max-width: 575px
+    width: 100%
+  .create_admin-course
+    min-height: 540px
+    border: 2px dashed #7C7F86
+.asterisk
+  color: #CC4141
+
+// create
+.lm_session-form
+  .form-check-input
+    flex: 0 0 auto
+  .thumb_vedio
+    .form-check
+      label
+        cursor: pointer
+  .admin-file-inp
+    select
+      padding: 13px
+      font-size: 14px
+  .admin-file-inp
+    span.select2.select2-container.select2-container--default
+      max-width: 100% !important
+      padding: 9px !important
+  .create-admin-form
+    .admin-file-select
+      .select2-container
+        z-index: 1 !important
+  span.select2-dropdown.select2-dropdown--above
+    box-shadow: 1px 22px 30px rgba(23, 25, 27, 0.07) !important
+
+  .lm_form-add
+    width: 50px
+    height: 50px
+    background: #fff
+    border-radius: 50%
+    flex: 0 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+
+.lm_session-list
+  .btn--primary-outline
+    &:hover
+      color: #fff !important
+  span.lm_pen
+    border-radius: 50%
+    background: #ffffff
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1490196078)
+    width: 35px
+    height: 35px
+    line-height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    position: relative
+    overflow: hidden
+  .lm__course
+    .lm_course-con
+      .lm_course-card
+        .card-body
+          .btn
+            padding: 10px 20px !important
+            font-size: 14px
+
+.lm_session-details
+  .lm_slot-min
+    border-bottom: 1px solid rgba(190, 190, 190, 0.30)
+    padding-bottom: 15px
+    gap: 8px
+    .min_slot
+      font-size: 16px
+      padding: 10px 8px
+      border-radius: 6px
+      border: 1px solid #F2F2F2
+      min-width: 110px
+      display: flex
+      align-items: center
+      justify-content: center
+  .btn-check:checked+.min_slot
+    color: #fff
+    border-color: #0E3049
+    background: linear-gradient(207deg, #0E3049 0.74%, #000 100%)
+
+.session_tbl
+  font-family: 'Georgia'
+  border-radius: 0 !important
+
+  th
+    font-size: 14px
+    font-weight: normal
+    color: #01152B
+    background-color: #F2F2F2
+    padding: 10px 14px
+
+  td
+    padding: 6px 14px
+
+  tr
+    font-size: 14px
+
+  .table-striped > tbody > tr:nth-of-type(odd) > *
+    color: #7C7F86
+    background-color: #fff !important
+    box-shadow: none
+  .table-striped > tbody > tr:nth-of-type(even) > *
+    color: #7C7F86
+    background-color: #f2f2f2 !important
+  .done_color
+    color: #11D147
+  .failed_color
+    color: #CC4141
+
+// #pills-purchased-session 
+//   .lm_course-card 
+//     .btn.btn--primary
+//       display: none !important
+//     .lm_pen
+//       display: none !important
+
+.card-featured
+  position: absolute
+  z-index: 9
+  background: #11d147
+  color: #fff
+  -webkit-transform: rotate(-45deg)
+  transform: rotate(-45deg)
+  text-align: center
+  top: -5px
+  left: -40px
+  width: 120px
+  padding: 10px 0 3px 0
+  display: flex
+  justify-content: center
+  img
+    width: 34px !important
+    transform: rotate(45deg)
+
+.session_box
+  background: #F7F7F7
+  padding: 20px
+  border-radius: 15px
+
+.lm__modal-4.book_session
+  .modal-body
+    background: #fff !important
+  span
+    svg
+      path
+        fill: #000
+  h5
+    font-size: 20px !important
+
+.lm__modal-4.session_preview
+  max-width: 850px
+  padding: 40px
+  .lm_mxw50
+    max-width: 100%
+    video
+      width: 100%
+
+.calendly-overlay
+  background: rgba(255, 255, 255, 0.45)
+  backdrop-filter: blur(5px)
+
+@media ( max-width:992px)
+  .calendly-overlay
+    .calendly-popup
+      padding: 0 20px
+
+body.dark
+  th
+    background-color: #0f2238 !important
+  .table-striped > tbody > tr:nth-of-type(odd) > *
+    color: #ffffff
+    background-color: #0e2e46 !important
+  .table-striped > tbody > tr:nth-of-type(even) > *
+    color: #ffffff
+    background: #0f2238 !important
+  .lm_session-list
+    span.lm_pen
+      background: #001d3c
+      svg
+        path
+          fill: #ffff !important
+  .lm_session-details .lm_slot-min .min_slot
+    color: #fff
+  .lm__modal-4.book_session
+    .modal-body
+      background: linear-gradient(207deg, #0E3049 0.74%, #000 100%) !important
+    span
+      svg
+        path
+          fill: #fff
+img.rounded-4.course_thumbnail_image_preview
+  height: 250px
+  width: 100%
+  object-fit: cover
+  border: 1px solid
+
+.lm_course-card
+  .card-img
+    height: 420px !important
+    object-fit: cover
+
+.lm_vedio-card.card
+  .card-img
+    height: 250px !important
+    object-fit: cover
+    // border: 1px solid
+    img
+      object-fit: cover
+.lm__course-list-admin
+  .create-admin-form
+    .admin-file-textarea
+      textarea
+        border-radius: 10px
+.admin-file-select
+  .dropdown-wrapper
+    border-color: #888 transparent transparent transparent
+    border-style: solid
+    border-width: 5px 4px 0 4px
+    height: 0
+    right: 14px
+    margin-left: 0px
+    margin-top: 0px
+    position: absolute
+    top: 47%
+    width: 0
+
+// .lm__course-list 
+//   .lm__course 
+//     .lm_course-con 
+//       .lm_course-card 
+//         .card-body .btn
+//           min-width: 20rem
+//           padding-left: 35px
+//           padding-right: 35px
+
+.lm__course-list
+  .lm__course
+    .lm_course-con
+      .lm_course-card
+        .card-body
+          .avtar-group
+            .avtar-55
+              width: 35px
+              height: 35px
+
+.lm_course-con
+  .lm_course-card
+    .card-body
+      p.mb-2
+        @media ( max-width: 425px)
+          margin-bottom: 145px !important
+    @media ( max-width: 768px)
+      .justify-content-between.gap-2
+        gap: .25rem !important
+        justify-content: start !important
+
+.lm_session-list
+  .lm_course-card
+    .card-img
+      border-radius: 15px
+      overflow: hidden
+      height: auto
+      padding-top: 68%
+      border: 1px solid #eaeaea
+      & > img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+
+.lm_session-details 
+  .lm_vedio-card 
+    .card-img
+      padding-top: 70% !important
+      width: 100% !important
+      height: 100% !important
+      & img
+        position: absolute
+        top: 0
+        right: 0
+        height: 100% !important
+        object-fit: cover
+        width: 100%

@@ -1,0 +1,159 @@
+.appendPostdetail video {
+    width: 100% !important;
+    border-radius: 10px;
+    max-height: 380px !important;
+    }
+
+    .appendPostdetail .card {
+    background: transparent;
+    }
+    .lm_card-post .card video {
+        width: 100% !important;
+        border-radius: 10px;
+        max-height: 380px !important;
+    }
+    .featuredPost-video .card-body video {
+        pointer-events: none;
+        max-height: 181px;
+    }
+
+    .featuredPost-video .card-body img.fr-fic.fr-dib {
+        max-height: 181px !important;
+        object-fit: contain;
+    }
+    .featuredPost-video  .card .card-body p,
+    .featuredPost-video  .card .card-body p span{
+        margin-bottom: 0px !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 6 !important;
+        -webkit-box-orient: vertical !important;
+    }
+    .mySwiper-post video {
+        width: 100% !important;
+    }
+
+    .post_comment.text-center .post-book.active svg path {
+        fill: #E3A130;
+        stroke: #E3A130;
+    }
+
+    @-webkit-keyframes like {
+        0% {
+            transform: scale(1) rotateZ(0);
+        }
+
+        25% {
+            transform: rotateZ(-15deg);
+        }
+
+        50% {
+
+
+            transform: scale(1.1) rotateZ(10deg);
+        }
+
+        75% {
+            transform: scale(1.3) rotateZ(10deg);
+        }
+
+        100% {
+            transform: rotateZ(0);
+        }
+    }
+
+    .lm_post-input-emoji.position-absolute.bottom-0 .select2-container {
+        z-index: 9;
+    }
+
+    @-webkit-keyframes book {
+        0% {
+            transform: scale(1) rotateZ(0);
+        }
+
+        25% {
+            transform: rotateZ(-15deg);
+        }
+
+        50% {
+
+
+            transform: scale(1.1) rotateZ(10deg);
+        }
+
+        75% {
+            transform: scale(1.3) rotateZ(10deg);
+        }
+
+        100% {
+            transform: rotateZ(0);
+        }
+    }
+
+    @-webkit-keyframes radio {
+        0% {
+            transform: scale(1);
+        }
+
+        33% {
+            transform: scale(.95);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .help-block.print-error-msg {
+
+        bottom: 0 !important;
+    }
+
+    span.badge.bg-primary {
+        font-family: var(--title-font);
+    }
+
+    .lm-featured-post .card .card-body p,
+    .lm-featured-post .card .card-body span {
+        margin-bottom: 30px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+    }
+
+    p:empty {
+        display: none !important;
+    }
+
+    .lm-featured-post img.fr-fic.fr-dib {
+        width: 100% !important;
+        border-radius: 10px !important;
+        overflow: hidden;
+        max-height: 250px !important;
+        object-fit: cover;
+        margin-bottom: 0px !important;
+    }
+
+    .mySwiper-course .card .card-body p,
+    .mySwiper-course .card .card-body span {
+        margin-bottom: 30px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    
+    .emoji-wysiwyg-editor:before {
+        content: attr(placeholder);
+        color: #9aa2ab;
+        pointer-events: none;
+    }
+    
+    .emoji-wysiwyg-editor:focus:before {
+        display: none;
+    }
+    

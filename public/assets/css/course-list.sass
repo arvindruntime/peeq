@@ -1,0 +1,299 @@
+@import "./variable"
+
+
+.lm__course-list
+  .lm__course
+    max-width: 1130px
+    width: 100%
+    .lm__course-title
+      h4
+        font-size: 32px
+    .lm_course-con
+      .lm_course-card
+        border-radius: 20px
+        padding: 20px
+        .card-img
+          border-radius: 15px
+          overflow: hidden
+          &::before
+            position: absolute
+            content: ""
+            background: #000000
+            opacity: 0.2
+            width: 100%
+            height: 100%
+          img
+            width: 100%
+            object-fit: cover
+            border-radius: 20px
+        .card-body
+          .badge
+            border-radius: 20px
+          h4
+            a
+              &:hover
+                color: #e3a130 !important
+          .avtar-group
+            .avtar-55
+              width: 40px
+              height: 40px
+              &:not(:first-child)
+                margin-left: -10px
+          .btn
+            min-width: auto
+            padding-left: 35px
+            padding-right: 35px
+          .lm__hover
+            opacity: 0
+            visibility: hidden
+            transition: all 0.5s ease-in-out
+            position: absolute
+            bottom: 22px
+            right: 130px
+            @media (max-width:768px)
+              visibility: visible
+              opacity: 1
+            span
+              border-radius: 50%
+              background: #ffffff
+              box-shadow: 0px 0px 8px 0px #00000026
+              width: 40px
+              height: 40px
+              line-height: 40px
+              display: flex
+              justify-content: center
+              align-items: center
+              flex-shrink: 0
+              position: relative
+              overflow: hidden
+        &:hover
+          .lm__hover
+            opacity: 1
+            visibility: visible
+
+.lm__course-buy
+  .lm__course-buy-main
+    max-width: 1250px
+    width: 100%
+    @media (max-width:768px)
+      max-width: initial
+      width: auto
+  .lm__course-buy-inner
+    max-width: 800px
+    width: 100%
+    @media (max-width:991px)
+      max-width: 100%
+    .lm_course-buy-con
+     
+      .lm_course-buy-card
+        overflow: hidden
+        border-radius: 20px
+        padding: 20px
+        box-shadow: 0px 0px 8px 0px #00000026
+        border: 0
+        &.lm_course-coaches
+          background: #F2F2F2
+        &:not(:last-child)
+          margin-bottom: 20px
+        .avtar-group
+          .avtar-55
+            width: 40px
+            height: 40px
+            &:not(:first-child)
+              margin-left: -10px
+        .list-group.video-list
+          .list-group-item
+            border: 0
+            border-radius: 5px
+            overflow: hidden
+            box-shadow: 0px 0px 8px 0px #00000026
+            margin-bottom: 10px
+          .video-bg
+            background: linear-gradient(47.45deg, #F3F4F6 2.6%, #D6D8DE 99.14%)
+            padding: 9px
+            height: 52px
+            width: 52px
+        .lm__coache
+          .lm__coaches
+            &:not(:last-child)
+              padding-right: 40px
+  .lm_vedio-card
+    padding: 20px
+    border: 0
+    box-shadow: 0px 0px 8px 0px #00000026
+    border-radius: 20px
+    .card-img
+      border-radius: 15px
+      overflow: hidden
+      // height: 250px
+      img.w-100
+        height: 100%
+      &::before
+        position: absolute
+        content: ""
+        background: #000000
+        opacity: 0.2
+        width: 100%
+        height: 100%
+    .lm__share
+      span
+        border-radius: 50%
+        background: #ffffff
+        box-shadow: 0px 0px 8px 0px #00000026
+        width: 40px
+        height: 40px
+        line-height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        position: relative
+        overflow: hidden
+    .btn
+      font-size: 18px
+      svg
+        path
+          fill: #fff
+      @media (max-width:991px)
+        font-size: 20px
+      span
+        display: flex
+        justify-content: center
+        align-items: center
+        svg
+          width: 28px
+          height: 28px
+    
+.p-10-50
+  padding: 10px 50px
+.P-30
+  padding: 30px
+
+
+
+.lm__form--button 
+  .btn
+    border-radius: 50px
+    padding: 16px 10px 16px 10px !important
+    font-size: 24px
+    @media ( max-width:  576px)
+      padding: 12px 10px 12px 10px !important
+      
+  .btn-colse
+    font-size: 24px
+
+.lm__course-tab .nav.nav-pills,
+.lm__view-tab .nav.nav-pills
+  background: #ffff
+  display: inline-flex
+  padding: 5px
+  border-radius: 60px
+  .nav-item .nav-link
+    border-radius: 35px
+    font-size: 16px
+    padding: 5px 25px 5px 25px
+    color: #252A36
+    &.active
+      color: #fff
+      background: #252A36
+
+.lm__course-list.lm__list-after-pay
+  .lm__course 
+    .lm_course-con 
+      .lm_course-card 
+        .card-body 
+          .lm__hover
+            right: 200px
+.lm__ratting
+  margin-top: 10px
+  span
+    svg
+      width: 30px
+      height: 30px
+
+
+.dropdown
+  .dropdown-toggle
+    &::after
+      display: none
+.dropdown
+  .open
+    >
+      .dropdown-menu
+        display: block
+        width: 100%
+        border: none
+        position: static
+
+  .dropdown-menu
+    min-width: 320px !important
+    width: 100% !important
+    border: none
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%)
+    border-radius: 20px
+    span.icon-md
+      border-radius: 50%
+      background: #E3A130
+      width: 40px
+      height: 40px
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 10px
+      flex: 0 0 auto
+    &.show
+      z-index: 2 !important
+
+    &.dropdown-menu-inner
+      min-width: 280px !important
+      max-width: 280px !important
+      width: 100% !important
+      background: #fff
+      box-shadow: 0 3px 6px rgb(0 0 0 / 16%)
+      margin: 0 auto
+    .divider
+      height: 1px
+      margin: 9px auto
+      overflow: hidden
+      background-color: #e5e5e5
+      max-width: 290px
+      width: 100%
+    .dropdown-item
+      color: #252A36
+      font-size: 16px
+      padding: 8px 20px
+      &:hover
+        color: #000
+        background-color: #E3A130
+      &:active
+        color: #000
+        background-color: #E3A130 !important
+      &:focus
+        background: transparent
+    h6
+      color: #000000
+      font-size: 20px
+  .toggler
+    >
+      a
+        &::after
+          display: block
+          content: " "
+          float: right
+          width: 0
+          height: 0
+          border-color: transparent
+          border-style: solid
+          border-width: 8px 8px 0px 8px
+          border-top-color: #000
+          margin-top: 7px
+          margin-right: -5px
+          border-radius: 5px
+
+.lm__member-card
+  .card
+    border-radius: 20px
+
+.change_password
+  max-width: 950px
+  width:100%

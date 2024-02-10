@@ -1,0 +1,97 @@
+header.dash__header
+  display: none!important
+
+aside.lm__dash
+  display: none!important
+header.lm__header-logo
+  display: block !important
+body
+  background-image: url("../images/hero-bg.jpg") !important
+  background-size: cover !important
+  background-repeat: no-repeat !important
+  background-attachment: fixed !important
+section.lm__hero.lm__plan-hero
+  background-image: none !important
+
+h1,h2,h3,h4,h5,h6
+  font-family: var(--login-font) !important
+
+.lm__hero
+  .row.lm_sign-in,
+  .row.lm_forget,
+  .lm__reset 
+    .lm__login--box
+      max-width: 710px
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+      .lm__login-form
+        margin-top: 50px
+        @media ( max-width: 576px )
+          margin-top: 30px
+      .lm__ac--login
+        margin-top: 50px
+        margin-bottom: 30px
+        p
+          margin-bottom: 0
+        @media ( max-width: 576px )
+          margin-top: 30px
+      .lm__form--check
+        label
+          margin-bottom: 0
+          font-size: 14px
+      .lm__pass
+        font-size: 14px
+      .lm__login-form 
+        .lm__form-input input
+          padding-left: 65px
+    .lm__form-help
+      p
+        margin-bottom: 50px
+  .lm_sign-up
+    .lm__login--box
+      max-width: 1080px
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 50px
+  .lm__plan
+    .container
+      max-width: 1570px
+      width: 100%
+    .lm__plan-inner
+      .col
+        padding: 0 !important
+    .lm__card-main
+      max-width: 1540px
+      width: 100%
+      .lm__card
+        height: 100%
+        .lm-list
+          height: 100%
+      .lm__card.text-start.card.p-3
+        padding: 24px !important
+        .card-body
+          h5,p,ul
+            margin-bottom: 24px !important
+        .lm_card-btn
+          margin-top: 0 !important
+  .row.lm__payment
+    .lm__login--box
+      border-radius: 20px
+      max-width: 620px
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+      .lm__login-title,
+      .lm__card.card
+        margin-bottom: 30px !important
+        h2,h6
+          margin-bottom: 0
+      .lm__login-form.payment
+        h5
+          margin-bottom: 30px !important
+      .lm__form--button
+        margin-bottom: 0
+      .lm_price
+        text-align: end

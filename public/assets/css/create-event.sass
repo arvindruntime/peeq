@@ -1,0 +1,658 @@
+@import "./variable"
+
+.lm__event-con
+  margin-top: 140px !important
+  .lm__event
+    max-width: 1000px
+    width: 100%
+    &.lm__event-list
+      max-width: 1130px
+      width: 100%
+    .create-btn
+      min-width: auto
+      font-family: var(--title-font)
+      padding-left: 30px
+      padding-right: 30px
+    .lm__event-card
+      .card
+        border-radius: 20px
+      h4
+        font-size: 22px
+    // .lm__event-title
+    //   h4
+    //     font-size: 32px
+    .dropdown
+      .dropdown-toggle
+        &::after
+          display: none
+    .dropdown
+      .open
+        >
+          .dropdown-menu
+            display: block
+            width: 100%
+            border: none
+            position: static
+
+      .dropdown-menu
+        min-width: 320px !important
+        width: 100% !important
+        border: none
+        box-shadow: 0 3px 6px rgb(0 0 0 / 16%)
+        border-radius: 20px
+        span.icon-md
+          border-radius: 50%
+          background: #E3A130
+          width: 40px
+          height: 40px
+          display: flex
+          justify-content: center
+          align-items: center
+          padding: 10px
+          flex: 0 0 auto
+        &.show
+          z-index: 2 !important
+
+        &.dropdown-menu-inner
+          min-width: 280px !important
+          max-width: 280px !important
+          width: 100% !important
+          background: #fff
+          box-shadow: 0 3px 6px rgb(0 0 0 / 16%)
+          margin: 0 auto
+        .divider
+          height: 1px
+          margin: 9px auto
+          overflow: hidden
+          background-color: #e5e5e5
+          max-width: 290px
+          width: 100%
+        .dropdown-item
+          color: #252A36
+          font-size: 16px
+          padding: 8px 20px
+          &:hover
+            color: #000
+            background-color: #E3A130
+          &:active
+            color: #000
+            background-color: #E3A130 !important
+          &:focus
+            background: transparent
+        h6
+          color: #000000
+          font-size: 20px
+      .toggler
+        >
+          a
+            &::after
+              display: block
+              content: " "
+              float: right
+              width: 0
+              height: 0
+              border-color: transparent
+              border-style: solid
+              border-width: 8px 8px 0px 8px
+              border-top-color: #000
+              margin-top: 7px
+              margin-right: -5px
+              border-radius: 5px
+    // .lm__event-tab
+    //   ul#pills-tab
+    //     background: #fff
+    //     display: inline-flex
+    //     padding: 5px
+    //     border-radius: 5px
+    //     box-shadow: 0px 0px 8px 0px #00000026
+    //   .nav-item
+    //     .nav-link
+    //       padding: 5px 25px
+    //       color: #252A36
+    //       font-family: "Georgia", sans-serif
+    //       &.active
+    //         color: #ffffff
+    //         background: #e3a130
+    //     &:not(:last-child)
+    //       margin-right: 15px
+    .event-img
+      width: 120px
+      height: 120px
+      overflow: hidden
+      border-radius: 15px
+      flex-shrink: 0
+      @media ( max-width: 577px )
+        width: 100%
+        height: 100%
+        position: relative !important
+        width: 100%
+        padding-top: 63%
+        overflow: hidden
+        border-radius: 8px
+        & img
+          position: absolute !important
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          width: 100%
+          height: 100%
+          -o-object-fit: cover
+          object-fit: cover
+    img
+      width: 100%
+      height: 100% !important
+      object-fit: cover
+    .lm__event-create
+      border: 1px dashed #7C7F86
+      border-radius: 10px
+      padding: 90px 130px
+      width: 100%
+      @media (max-width: 992px )
+        padding: 90px
+      .lm__event-btn
+        .create-btn
+          display: flex
+          justify-content: center
+          align-items: center
+          text-align: center
+          font-size: 28px
+          color: #e3a130
+          font-family: "Georgia", sans-serif
+          span
+            width: 42px
+            height: 42px
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #fff
+            border-radius: 50%
+            background-size: 50%
+            flex-shrink: 0
+  .lm_member-att
+    max-width: 1130px
+    width: 100%
+    .lm__member-att-list
+      .nav.nav-pills
+        background: #FFFFFF
+        border-radius: 40px
+        padding: 5px
+        display: inline-flex
+        .nav-item
+          .nav-link
+            color: #252A36 !important
+            border: 1px solid transparent
+            padding: 5px 25px
+            background: transparent
+            border-radius: 30px
+            font-family: var(--title-font)
+            // box-shadow: 0px 0px 8px 0px #00000026
+
+          &:not(:last-child)
+            margin-right: 15px
+
+          .nav-link.active
+            color: #fff !important
+            background: #252A36
+            border: 1px solid #252A36
+
+  .event-view
+    max-width: 800px
+    width: 100%
+    .event_date
+      position: relative
+      max-width: 700px
+      width: 100%
+      background: #fff
+      border-radius: 20px
+      overflow: hidden
+      margin: 0 auto
+      margin-top: -50px
+      z-index: 1
+      @media (max-width: 576px )
+        max-width: 400px
+      h3
+        font-size: 34px
+        @media (max-width: 576px )
+          font-size: 24px
+      .event_date-1
+        padding: 30px
+    .event-btns
+      padding: 30px
+      @media (max-width: 576px )
+        width: 100%
+      .btn
+        border-radius: 5px
+        min-width: 180px
+        padding-top: 10px
+        padding-bottom: 10px
+    .event-cmt
+      border-radius: 10px
+      .avtar
+        width: 40px
+        height: 40px
+        line-height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+        img
+          object-fit: cover
+
+  .lm__event-cal
+    .external-events
+      display: none !important
+
+    .fc-toolbar-chunk button
+      display: none !important
+
+    table, tbody, tr, td, th, thead
+      border: 1px solid #ffffff00 !important
+      font-family: "Georgia", sans-serif !important
+
+  .lm__event-cal
+    font-family: "Georgia", sans-serif
+    background: #fff
+    padding: 20px 30px
+    border-radius: 30px
+    width: 100%
+    max-width: 435px
+    @media (max-width: 1400px )
+      max-width: 100%
+
+    .fc-header-toolbar
+      justify-content: end
+      .fc-toolbar-title
+        color: #e3a130 !important
+
+    .fc-col-header, .fc-daygrid-body
+      width: 100% !important
+      height: 100% !important
+
+    .fc-daygrid-day-events
+      display: none
+
+    table.fc-scrollgrid-sync-table
+      width: 100% !important
+      height: 100% !important
+
+    #external-events
+      display: none !important
+
+  .lm__expand-cal
+    display: flex
+    justify-content: center
+    .btn
+      padding: 10px 38px
+      margin-top: 15px
+  .lm__event-100
+    max-width: 1306px
+    width: 100%
+    .lm__event-cal100
+      background: #fff
+      padding: 20px
+      border: 1px solid #C6C6C6
+      box-shadow: 10px 12px 9px 0px #00000005
+      max-width: 1306px
+      width: 100%
+      border-radius: 20px
+      @media (max-width:576px)
+        padding-top: 20px !important
+
+    .fc-scrollgrid.fc-scrollgrid-liquid
+      border: 0 !important
+
+    .fc-scrollgrid-section.fc-scrollgrid-section-body > td
+      border: 0px !important
+
+    .fc .fc-scrollgrid-section-header > *
+      border: 0 !important
+    .fc-non-business
+      background: transparent !important
+
+    .fc-daygrid-day-top
+      justify-content: start
+
+    .fc-daygrid-day-number
+      font-size: 24px
+      color: #303134
+      @media (max-width:576px)
+        font-size: 18px
+
+    .fc-col-header,
+    .fc-scrollgrid-sync-table,
+    .fc-daygrid-body.fc-daygrid-body-unbalanced
+      width: 100% !important
+    .fc-toolbar-chunk div
+      display: flex
+      align-items: center
+      @media (max-width:576px)
+        margin-top: 20px
+
+  .fc-prev-button.fc-button.fc-button-primary,
+  .fc-next-button.fc-button.fc-button-primary
+    background: transparent
+    width: 32px
+    height: 32px
+    color: #E3A130
+    border: 1px solid #E3A130
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 10px
+    border-radius: 10px
+    box-shadow: none
+  .fc-toolbar-title
+    margin: 0 20px !important
+    font-size: 16px !important
+  .fc .fc-toolbar
+    flex-wrap: wrap
+  .fc-button
+    &:focus, &.active
+      outline: none
+      box-shadow: none
+      background-color: transparent !important
+
+  // .fc .fc-button-primary:not(:disabled)
+  //   &:active:focus, &.fc-button-active:focus
+  //     box-shadow: none
+  //     background-color: transparent !important
+
+    &:active
+      color: #E3A130
+      border: 1px solid #E3A130
+      box-shadow: none
+      background-color: transparent !important
+
+  .fc-today-button.fc-button.fc-button-primary
+    border-radius: 10px
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 500
+    margin-left: 15px
+    background-color: #01152B !important
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+  .fc-toolbar-chunk .fc-button-group
+    background: #f2f2f2
+    border-radius: 10px
+    text-transform: uppercase
+    .fc-button-primary
+      background: transparent
+      color: #252A36
+      border: transparent !important
+      text-transform: uppercase
+      font-weight: normal
+      padding: 4px 20px
+      font-weight: 500
+      border-radius: 10px
+      border: 1px solid transparent
+      font-family: Georgia, 'Times New Roman', Times, serif
+      font-size: 14px
+      &.fc-button-active
+        color: #fff !important
+        background: #E3A130 !important
+        border-radius: 10px
+        border: 1px solid #E3A130 !important
+
+  .fc-button-group .fc-button-primary:not(:disabled):active
+    color: #fff !important
+    background: #E3A130 !important
+    border-radius: 10px !important
+  .fc .fc-button-primary:not(:disabled)
+    &:active:focus,
+    &.fc-button-active:focus
+      background: #e3a130 !important
+      color: #fff !important
+      box-shadow: none !important
+      border: none !important
+  a.fc-daygrid-event.fc-daygrid-dot-event.fc-event.fc-event-draggable.fc-event-resizable.fc-event-start.fc-event-end
+    background: #F5F5F5
+    color: #06152B
+    font-weight: 500
+
+  .fc-daygrid-event-dot
+    border: 5px solid #E3A130 !important
+
+// --
+.lm_create-modal
+  .btn-link
+    color: #e3a130
+    background: none
+    border: none
+    text-decoration: none
+    font-family: var(--title-font)
+  .lm_create-body
+    padding: 50px
+    @media (max-width: 768px )
+      padding: 30px
+    .event-img
+      width: 100%
+      height: 240px
+      border-radius: 20px
+      overflow: hidden
+      margin-bottom: 15px
+      img
+        object-fit: cover
+        height: 100%
+    .event-img-2
+      width: 120px
+      height: 120px
+      border-radius: 15px
+      overflow: hidden
+      margin-bottom: 15px
+      img
+        object-fit: cover
+        height: 100%
+
+  .lm_priv
+    input.form-control
+      border: 1px solid #7C7F86
+      border-radius: 5px
+  .lm_rsvp
+    background: linear-gradient(47.45deg, #F3F4F6 2.6%, #D6D8DE 99.14%)
+    border: 1px solid #7C7F86
+    border-radius: 5px
+    padding: 15px 30px
+    @media (max-width: 576px )
+      padding: 15px
+    .btn
+      min-width: auto
+  h5
+    font-size: 22px
+
+  .lm_upld
+    padding: 10px 35px
+    border: 1px dashed #252A36
+    border-radius: 5px
+    display: inline-block
+    /* position:relative; */
+
+  .input-group-text
+    background: transparent
+    border: 0
+
+  .form-control[type="file"]
+    display: none
+    width: 0
+    background: transparent
+    padding: 0
+  .lm__eve-btn
+    .eve-btn
+      padding: 6px 50px
+      font-family: var(--title-font)
+      font-size: 22px
+      @media (max-width: 991px )
+        font-size: 18px
+    .eve-btn-round
+      border-radius: 50%
+      width: 40px
+      height: 40px
+      min-width: auto
+  .lm__meetting
+    .form-check-label
+      font-family: var(--title-font)
+    .form-check-input
+      border: 2px solid #252A36
+      box-shadow: inset 0px 0px 0px 2px #ffffff !important
+      &:checked
+        background-color: #252A36
+        border: 2px solid #252A36
+        box-shadow: inset 0px 0px 0px 2px #ffffff !important
+
+        &[type=radio]
+          background: #252A36 !important
+          background-image: none !important
+  .btn-cancle
+    background-image: none
+    &:focus
+      box-shadow: none
+      outline: none
+.lm__modal-4
+  ul
+    list-style: disc
+    padding-left: 35px
+.tooltip-icon
+  position: relative
+  display: inline-block
+  .tooltiptext
+    opacity: 0
+    visibility: hidden
+    transition: all 0.5s ease-in-out
+    width: 150px
+    background: white
+    box-shadow: 0px 0px 15px 0px #00000026
+    color: #000
+    text-align: center
+    border-radius: 6px
+    padding: 10px 15px
+    position: absolute
+    z-index: 1
+    top: -72px
+    font-size: 12px
+    transform: translate(-50px, -50px)
+
+  &:hover .tooltiptext
+    visibility: visible
+    opacity: 1
+
+  .tooltiptext:after
+    content: ""
+    position: absolute
+    width: 0
+    height: 0
+    margin-left: -10px
+    bottom: -18px
+    left: 50%
+    box-sizing: border-box
+    border: 10px solid black
+    border-color: transparent transparent #fff #ffffff
+    transform-origin: 0 0
+    transform: rotate(-45deg)
+    box-shadow: -8px px 3px #00000026
+
+.lm_create-zoom
+  background: #2D8CFF
+  border-radius: 10px
+  padding: 30px 88px
+  text-align: center
+  @media (max-width: 768px )
+    padding: 30px
+  & img
+    width: 150px
+  p
+    color: #fff
+
+.lm__event-tab
+  ul.nav-primary
+    background: #fff
+    display: inline-flex
+    padding: 5px
+    border-radius: 5px
+    box-shadow: 0px 0px 8px 0px #00000026
+  .nav-item
+    .nav-link
+      padding: 5px 25px
+      color: #252A36
+      font-family: "Georgia", sans-serif
+      &.active
+        color: #ffffff
+        background: #e3a130
+    &:not(:last-child)
+      margin-right: 15px
+
+#cke_ckplot,
+#cke_ckplot2,
+#cke_ckplot3,
+#cke_ckplot4
+  border: 0
+  box-shadow: 0px 0px 8px 0px #00000026
+  display: flex
+  flex-direction: column-reverse
+  border-radius: 6px
+  overflow: hidden
+
+.cke_inner.cke_reset
+  display: flex
+  flex-direction: column-reverse
+
+span.cke_bottom
+  display: none
+
+.cke_top
+  border: 0 !important
+#cke_1_contents
+  height: 125px !important
+
+.lm__event-cal
+  .lm__event-cal .fc-non-business
+    background: transparent !important
+
+  .fc-bg-event.fc-event.fc-event-start.fc-event-past
+    background-color: #CC4141 !important
+    width: 5px
+    height: 5px
+    border-radius: 50%
+    bottom: 0 !important
+    position: absolute
+    top: auto !important
+    right: auto !important
+    left: 50% !important
+    opacity: 1
+    transform: translateX(-50%)
+
+  .fc .fc-daygrid-day.fc-day-today
+    background-color: rgba(255, 220, 40, 0.15)
+    background-color: var(--fc-today-bg-color, rgba(255, 220, 40, 0.15))
+    border-radius: 50%
+    width: 40px
+    height: 40px
+    flex-shrink: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #e3a130
+    color: #ffff
+    margin: auto
+
+    .fc-daygrid-day-top a
+      color: #ffff
+      &:hover
+        color: #ffff
+
+  .fc .fc-daygrid-day-frame
+    display: flex
+    justify-content: center !important
+    align-items: center
+  .fc .fc-non-business
+    background: transparent
+  a.fc-col-header-cell-cushion
+    font-family: var(--title-font)
+    color: #252A36
+
+  .fc-daygrid-day-number
+    font-family: var(--title-font)
+
+.lm__member-btn
+  .h6
+    margin-bottom: 0

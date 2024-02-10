@@ -1,0 +1,299 @@
+@import "./variable"
+body
+  background: #F2F2F2
+  .lm_vec
+    position: fixed
+    right: 0
+    bottom: 0
+    .light
+      display: block
+    .dark
+      display: none
+.lm__header-logo
+  display: none
+
+
+.lm__dash-con
+  margin-top: 140px !important
+  @media (max-width:768px)
+    margin-top: 100px !important
+  .lm__quiz.lm__quiz-admin
+    max-width: 1130px
+    width: 100%
+    input[type=text]
+      padding-block: 9.5px !important
+      font-size: 14px
+      &::placeholder
+        font-size: 14px
+    .lm__quiztopic 
+      h5
+        font-size: 28px
+        font-weight: 700
+        color: #e3a130
+    .lm__quizbox 
+      background-color: #ffffff 
+      padding: 20px 
+      border-radius: 20px 
+      border-left: 5px solid #e3a130
+      .lm__quiz-question 
+        background-color: #e3a130 
+        padding: 15px 
+        border-radius: 10px
+        .lm__question--edit
+          margin-bottom: 0
+        p 
+          font-size: 24px 
+          color: #252A36
+        .lm__edit--arrow
+          transition: all .6s ease-in-out
+          cursor: pointer
+      &.active
+        .lm_quiz-queimage
+          margin: 20px 0
+        .lm__quizinput
+          margin-top: 10px
+        .lm__edit--arrow
+          transform: rotate(180deg)
+          transition: all .6s ease-in-out
+      .lm_upld 
+        padding: 43px 65px 
+        border: 1px dashed #252A36 
+        border-radius: 5px 
+        display: inline-block 
+        cursor: pointer
+        color: #252A36
+        .form-control[type=file] 
+          display: none 
+          width: 0 
+          background: transparent 
+          padding: 0 
+        .input-group-text 
+          background: none 
+          border: 0 
+      .lm_quiz-queimage 
+        .title-font 
+          color: #252A36 
+      .lm__quiz-tab 
+        .tab-content>.active 
+          padding: 15px
+          border-radius: 10px
+        .tab-pane 
+          color: #ffffff
+        .nav-pills 
+          background-color: #ffffff 
+          border-radius: 60px 
+          padding: 5px 
+          overflow: hidden 
+      .nav-pills 
+        .nav-link 
+          color: #252A36 
+          border-radius: 60px 
+          padding: 5px 25px 
+    .lm__option-choice
+      gap: 15px
+      .lm__term
+        flex: 0 0 125px
+        max-width: 125px
+        span
+          font-size: 18px
+          margin-right: 5px
+          line-height: 0.8
+          color: #252A36
+      .lm__quiz-input
+        flex: 1
+      .lm_form-add 
+        width: 40px
+        height: 40px
+        background: #fff
+        border-radius: 50%
+        flex: 0 0 auto
+        display: flex
+        justify-content: center
+        cursor: pointer
+        align-items: center       
+    .lm__quizbtn 
+      .btn
+        font-weight: 400
+        padding: 10px 40px
+        line-height: 1
+        font-size: 20px
+    .tooltip-icon .tooltiptext 
+      transform: translate(-70px, -60px)
+    .lm__quizbox 
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link 
+        background-color: #252A36 
+        border-radius: 60px 
+        color: #ffffff
+.lm__editeye
+  margin-right: 10px
+  cursor: pointer 
+  .lm__edit
+    display: none
+  &.active 
+    .lm__edit--hidden
+      display: none
+    .lm__edit 
+      display: block
+
+.lm__dash-con 
+  .lm__quiz--preview 
+    .lm__quizbox 
+      .lm__quiz-question
+        background-color: #ffffff
+        margin-bottom: 20px
+    .lm__preview-choices
+      padding: 15px
+      background-color: #ffffff
+      border-radius: 10px
+      margin-top: 20px
+      .lm-check-term 
+        padding-left: 31px
+        opacity: 1
+        .checkmark 
+          top: 50%
+          transform: translateY(-50%)
+        span
+          color: #242424
+          font-size: 20px
+    .lm__choice--img
+      p
+        color: #242424
+        font-size: 20px
+        margin-top: 5px
+        line-height: 1
+      img
+        border-radius: 10px
+        max-height: 100px 
+        width: auto
+        
+
+@media (max-width: 767px)
+  .lm__dash-con 
+    .lm__quiz 
+      .lm__quizbox 
+        .lm_upld
+          padding: 20px 35px
+      .lm__option-choice 
+        .lm__term
+          flex: 0 0 85px
+          max-width: 85px
+@media ( max-width: 676px)
+  .lm__dash-con 
+    .lm__quiz 
+      .lm__quizbox 
+        padding: 15px
+        .lm__optionbox
+          padding-bottom: 15px
+          border-bottom: 1px solid #e7e7e7
+        .lm__quiz-input
+          flex: 1 0 60%
+      .lm__quizbtn 
+        .btn
+          padding: 10px 15px
+          font-size: 16px
+@media ( max-width: 375px)
+  .lm__dash-con 
+    .lm__quiz
+      .lm__quizbtn
+        flex-wrap: wrap
+
+.lm__quizresult 
+  h2 
+    font-size: 45px 
+    text-transform: uppercase 
+    color: #e3a130 
+    font-weight: 700 
+    line-height: 1.2 
+    margin-bottom: 20px 
+  img 
+    margin: 0 auto 
+    max-width: 215px 
+  .lm__quizscore 
+    p 
+      margin: 0 
+      margin-top: 30px 
+      line-height: 1.2 
+      margin-bottom: 5px 
+      font-size: 24px 
+      color: #ffffff 
+  .lm__quizscore--number 
+    span 
+      font-size: 50px 
+      font-weight: 700 
+      color: #ffffff 
+      line-height: 1.2 
+      margin-bottom: 30px 
+      display: inline-block 
+      font-family: 'Georgia' 
+      &:first-child 
+        color: #e3a130 
+
+body.dark 
+  .lm__dash-con 
+    .lm__quiz--preview 
+      .lm__preview-choices 
+        background-color: #0d2e47
+        .lm-check-term 
+          span
+            color: #ffffff
+        .lm__choice--img 
+          p
+            color: #ffffff
+    .lm__quiz 
+      .lm__quizbox 
+        background: var(--bg-dark-theame)
+        color: #E6E6E6
+        .lm__quiz-question 
+          background-color: #e3a130
+          p
+            color: #282828
+        .lm_quiz-queimage 
+          .title-font
+            color: #ffffff
+        .lm_upld
+          color: #ffffff
+          border-color: #ffffff
+      .lm__option-choice 
+        .lm__term 
+          span
+            color: #ffffff
+    .lm__quiz-tab 
+      .tab-pane 
+        color: #ffffff
+      .nav-pills 
+        background-color: #01152b  !important
+      .nav-pills 
+        .nav-link 
+          color: #ffffff !important
+    .input-group-text
+      color: #fff
+  .tooltip-icon .tooltiptext
+    background: #0e3049
+    color: #fff
+    &::after
+      // background: #0e3049
+      border-color: transparent transparent #0e3049 #0e3049
+form 
+  label
+    opacity: 1
+
+
+
+.lm__preview-choices.shadow .lm__term.mb-3
+  padding: 8px 10px
+
+  &.right
+    border-radius: 5px
+    color: #11D147
+    background: rgba(17, 209, 71, 0.2)
+
+    span
+      color: #11D147
+
+  &.wrong
+    border-radius: 5px
+    color: #CC4141
+    background: rgba(204, 65, 65, 0.2)
+
+    span
+      color: #CC4141

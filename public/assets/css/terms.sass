@@ -1,0 +1,69 @@
+@import "./variable"
+
+header,
+.lm__dash
+  display: none !important
+
+.lm_term
+  margin-bottom: 30px
+  .lm_term-back
+    h5
+      font-size: 20px
+  .lm_term-logo
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    width: 100%
+  .lm_term-con
+    .lm_term-main
+      max-width: 800px
+      width: 100%
+    .lm_term-card
+      border-radius: 30px
+      padding: 30px
+      border: 0
+      box-shadow: 0px 0px 8px 0px #00000026
+      h2
+        font-size: 50px
+        @media (max-width:576px)
+          font-size: 30px
+      h3
+        font-size: 35px
+        @media (max-width:576px)
+          font-size: 22px
+      p
+        margin-bottom: 30px
+        @media (max-width:576px)
+          margin-bottom: 22px
+    ul
+      list-style: unset
+      padding-left: 30px
+      li
+        padding-bottom: 10px
+  .form-label
+    color: #7C7F86
+    font-family: var(--title-font)
+  .form-control
+    padding: 11px 10px
+    box-shadow: 0px 0px 8px 0px #00000026
+    &:focus
+      box-shadow: 0px 0px 8px 0px #00000026
+  .input-group-text
+    gap: 10px
+    background: #FFFFFF
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15)
+    font-family: Georgia
+    font-size: 16px
+    font-weight: 400
+    padding: 8px 25px
+    line-height: 22px
+    cursor: pointer
+    border-radius: 8px !important
+    border: none
+body
+  background: #F2F2F2
+.lm_term-card
+  span.select2.select2-container.select2-container--default
+    max-width: 100% !important
+

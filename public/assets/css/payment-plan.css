@@ -1,0 +1,278 @@
+:root {
+  --primary-color: #E3A130;
+  --bg-primary-400: #F5FBFF;
+  --secondry-color: #7C7F86;
+  --white-color: #fff;
+  --gray-400: #BEBEBE;
+  --green-color: #11D147;
+  --danger-color: #B42318;
+  --light-bg: #FFFFFF;
+  --dark-blue: #131A2C;
+  --black-bg: #252A36;
+  --bg-dark-theame:#0a2538;
+  --dark-text: #667085;
+  --light-text: #FFFFFF;
+  --btn-color: #0079B5;
+  --btn-text-color: #ECECEB;
+  --black-color: #101828;
+  --radius-btn: 0.5rem;
+  --gradient-one: linear-gradient(91.14deg, #E2A12D 0%, #AF7100 101.23%);
+  --gradient-two: linear-gradient(207.33deg, #0E3049 0.74%, #000000 100%);
+  --gradient-three: linear-gradient(91.14deg, #f8a311 0%, #a66c00 101.23%);
+  --gradient-four: linear-gradient(90deg, #0E3049 0.01%, rgba(1, 21, 43, 0) 100%);
+  --gradient-five:linear-gradient(207.33deg, #062033 0.74%, #000000 100%);
+  --z-index: 1;
+  --z-index-sticky: 9;
+  --z-index-sidebar: 99;
+  --z-index-popup: 999;
+  --primary-font: "Georgia", sans-serif;
+  --title-font: "Georgia", sans-serif;
+  --login-font:"PlayfairDisplay", sans-serif;
+  --kalam-font:"Kalam", sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-smedium: 600;
+  --font-weight-bold: 700;
+  --base-text: 0.875rem;
+  --font-style-italic: italic;
+  --line-height: 1rem;
+  --text-xmd: 1.1875rem;
+  --text-md: 1.125rem;
+  --text: 1rem;
+  --text-sm:0.6875rem;
+  --text-xs:0.875rem;
+  --text-xxs:0.625rem;
+  --h1:1.125rem;
+  --h2-xl:1.5625rem;
+  --h2:1.5625rem;
+  --h3-xl:1.375rem;
+  --h3:1.375rem;
+  --h4-xl:1.25rem;
+  --h4:1.25rem;
+  --h5-xl:1.125rem;
+  --h5:1.125rem;
+  --h6-xl:1rem;
+  --h6:1rem;
+}
+
+@media (min-width: 575px) {
+  :root {
+    --container-w: 100%;
+    --line-height: 1.6rem;
+    --base-text: 1rem;
+    --text-xmd: 1.25rem;
+    --text-md: 1rem;
+    --text: 1rem;
+    --text-sm:0.875rem;
+    --text-xs:0.75rem;
+    --text-xxs:0.625rem;
+    --h1:2.125rem;
+    --h2-xl:2rem;
+    --h2:2rem;
+    --h3-xl:1.5rem;
+    --h3:1.5rem;
+    --h4-xl:1.25rem;
+    --h4:1.25rem;
+    --h5-xl:1.125rem;
+    --h5:1.125rem;
+    --h6-xl:1rem;
+    --h6:1rem;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --container-w: 46.875rem;
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    --container-w: 56.25rem;
+    --text-xmd: 1.1875rem;
+    --text-md: 1.125rem;
+    --text: 1rem;
+    --text-sm:0.875rem;
+    --text-xs:0.75rem;
+    --text-xxs:0.625rem;
+    --h1:2.5rem;
+    --h2-xl:1.875rem;
+    --h2:1.875rem;
+    --h3-xl:1.75rem;
+    --h3:1.75rem;
+    --h4-xl:1.3125rem;
+    --h4:1.3125rem;
+    --h5-xl:1.25rem;
+    --h5:1.25rem;
+    --h6-xl:1.125rem;
+    --h6:1.125rem;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --container-w: 67.5rem;
+    --base-text: 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  :root {
+    --container-w: 72.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  :root {
+    --container-w: 82.5rem;
+    --base-text: 1.125rem;
+  }
+}
+@media (min-width: 1800px) {
+  :root {
+    --container-w: 76.25rem;
+    --line-height: 1.5rem;
+    --base-text: 1rem;
+    --text-xmd: 1.1875rem;
+    --text-md: 1.125rem;
+    --text: 1rem;
+    --text-sm:0.875rem;
+    --text-xs:0.75rem;
+    --text-xxs:0.625rem;
+    --h1:3.75rem;
+    --h2-xl:2.925rem;
+    --h2:2.625rem;
+    --h3-xl:2.375rem;
+    --h3:2rem;
+    --h4-xl:2rem;
+    --h4:1.875rem;
+    --h5-xl:1.5rem;
+    --h5:1.5rem;
+    --h6-xl:1.3125rem;
+    --h6:1.125rem;
+  }
+}
+body {
+  background: #F2F2F2;
+}
+body .lm_vec {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+body .lm_vec .light {
+  display: block;
+}
+body .lm_vec .dark {
+  display: none;
+}
+
+.lm__header-logo {
+  display: none;
+}
+
+.lm__dash-con {
+  margin-top: 150px;
+}
+@media (max-width: 992px) {
+  .lm__dash-con {
+    margin-top: 100px;
+  }
+}
+
+.z-index-n1 {
+  z-index: -1;
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+
+.lm__menu-start {
+  width: 350px !important;
+  background: transparent;
+}
+.lm__menu-start .offcanvas-header {
+  z-index: 9;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 2px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgb(227, 161, 48);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.lm__dash-con.payement_plan .lm_payment-plan {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 30px;
+}
+@media (max-width: 991px) {
+  .lm__dash-con.payement_plan .lm_payment-plan {
+    max-width: 100%;
+  }
+}
+.lm__dash-con.payement_plan h4 {
+  font-weight: 500;
+}
+.lm__dash-con.payement_plan .table {
+  z-index: 9;
+  font-family: var(--primary-font);
+  border: transparent;
+}
+.lm__dash-con.payement_plan .table > :not(caption) > * > * {
+  padding: 15px;
+  padding: 10px 30px 10px 13px;
+}
+.lm__dash-con.payement_plan .table thead tr {
+  color: #121212;
+}
+.lm__dash-con.payement_plan .table tr {
+  color: #7C7F86;
+}
+.lm__dash-con.payement_plan .table tr:nth-child(odd) {
+  background: #E6E6E6;
+  color: #7C7F86;
+}
+.lm__dash-con.payement_plan .table tr:nth-child(even) {
+  background: #FFFFFF;
+}
+.lm__dash-con.payement_plan .table tr td {
+  color: #7C7F86;
+}
+.lm__dash-con.payement_plan .table th {
+  white-space: nowrap;
+  padding: 10px 10px 10px 13px;
+}
+.lm__dash-con.payement_plan .lm__profile-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lm__dash-con.payement_plan .table-search .form-control {
+  padding: 10px 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 490px) {
+  .lm__dash-heade .lm_nav,
+  .lm__dash-heade .col-2,
+  .lm__dash-heade .col-lg-6 {
+    padding: 0;
+  }
+}
+body.dark .lm__dash-con.payement_plan table svg path {
+  fill: #cc4141;
+}
+
+table.dataTable thead > tr > th.sorting:before, table.dataTable thead > tr > th.sorting:after, table.dataTable thead > tr > th.sorting_asc:before, table.dataTable thead > tr > th.sorting_asc:after, table.dataTable thead > tr > th.sorting_desc:before, table.dataTable thead > tr > th.sorting_desc:after, table.dataTable thead > tr > th.sorting_asc_disabled:before, table.dataTable thead > tr > th.sorting_asc_disabled:after, table.dataTable thead > tr > th.sorting_desc_disabled:before, table.dataTable thead > tr > th.sorting_desc_disabled:after, table.dataTable thead > tr > td.sorting:before, table.dataTable thead > tr > td.sorting:after, table.dataTable thead > tr > td.sorting_asc:before, table.dataTable thead > tr > td.sorting_asc:after, table.dataTable thead > tr > td.sorting_desc:before, table.dataTable thead > tr > td.sorting_desc:after, table.dataTable thead > tr > td.sorting_asc_disabled:before, table.dataTable thead > tr > td.sorting_asc_disabled:after, table.dataTable thead > tr > td.sorting_desc_disabled:before, table.dataTable thead > tr > td.sorting_desc_disabled:after {
+  right: 0px !important;
+}
+
+.lm__dash-con.payement_plan .table > :not(caption) > * > * {
+  padding: 10px 20px 10px 13px;
+}/*# sourceMappingURL=payment-plan.css.map */

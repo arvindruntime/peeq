@@ -1,0 +1,116 @@
+// header
+//   display: none
+
+.lm__master
+  background: #F2F2F2
+  padding: 200px 0
+  .container
+    max-width: 100%
+    padding-left: 400px
+    padding-right: 50px
+  h2.text-white
+    color: #01152B !important
+.lm__master-inner
+  max-width: 1025px
+
+.lm__form-input
+  label
+    font-size: 50px
+    flex-shrink: 0
+    color: #01152B
+  .form-control-icon
+    width: 100%
+    .icon
+      padding-left: 3.438rem
+    span
+      position: absolute
+      top: 50%
+      left: 33px
+      transform: translate(-50%, -50%)
+  textarea.form-control
+    height: 200px
+    border-radius: 20px
+
+input#lm-upd
+  visibility: hidden !important
+  display: none
+.lm__upd label
+  display: block !important
+  cursor: pointer
+  span
+    font-size: 16px
+  svg
+    path
+      fill: #01152B
+
+.lm__upd span
+  border: 1px solid #01152B
+  padding: 7px 10px
+  justify-content: center
+  border-radius: 8px
+  color: #01152B
+  column-gap: 10px
+
+.lm__form-input
+  .lm__dash-search
+    position: relative
+    button
+      position: absolute
+      transform: translate(-50%, -78%)
+      top: 50%
+      right: -20px
+      border: none
+      background: transparent
+      span
+        border-radius: 50%
+        background: #01152B
+        width: 42px
+        height: 42px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 10px
+
+input::-webkit-calendar-picker-indicator
+  -webkit-appearance: none !important
+  display: none !important
+.lm__form-input
+  .lm__term
+    label
+      font-size: 16px
+  h3
+    font-size: 50px
+    color: #01152B
+
+.lm__form-input.radio
+  label
+    font-size: 18px
+    font-weight: 500
+    font-family: var(--primary-font) !important
+    color: var(--primary-color)
+    p
+      font-size: 16px
+      font-weight: normal
+      color: #01152B
+  .form-check-input
+    border: 2px solid #e3a130
+    background: transparent
+    &:checked
+      background-color: #e3a130 !important
+      border-color: #e3a130 !important
+      box-shadow: inset 0px 0px 0px 2px #252a36 !important
+    &:focus
+      box-shadow: inset 0px 0px 0px 2px #252a36 !important
+      box-shadow: none
+
+.dark
+  .lm__master
+    background: #01152B
+  .lm__form-input
+    label
+      color: #ffffff
+  h2.text-white
+    color: #ffffff !important
+  h3
+    font-size: 50px
+    color:#ffffff

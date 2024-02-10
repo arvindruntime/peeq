@@ -1,0 +1,96 @@
+.hidden {
+    display: none;
+}
+.list-group .list-group-item a:hover {
+    color: #e3a130;
+}
+p.text-secondary.title-font:hover {
+ color:#eaa122 !important
+}
+.event-form{
+    height: 100%;
+    overflow: scroll;
+}
+
+button#app-download {
+    background:none;
+    border:none
+}
+
+body.dark button#app-download svg path {
+    stroke: #fff;
+    fill: #fff
+}
+
+/* ///// Start  pre loader code */
+/* CSS styling for the preloader */
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+/* Additional CSS styling for the Push Notification List */
+.push-notification-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.push-notification-list li {
+  margin-bottom: 2px;
+}
+
+.table-responsive::-webkit-scrollbar{
+  height: 10px;
+}
+
+/* ///// End PRe loader code */
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    to { opacity: 1.0; }
+}                                                                                                                                                                                                                                  
+
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    to { opacity: 1.0; }
+}
+
+.blink {
+  animation:fade 1000ms infinite;
+  -webkit-animation:fade 1000ms infinite;
+}
+ul#pushNotificationList {
+    height: 420px;
+    overflow: auto;
+}
+
+#pushNotificationList li.view {
+    background: #f0f0f0;
+}
+body.dark #pushNotificationList li.view{
+    background: #0e3049
+}
+
+body.dark  ul#pushNotificationList li:not(:last-child){
+    border-bottom: 1px solid #01152b;
+}
+.cursor-pt{
+    cursor: pointer;
+}
+
+ul#pushNotificationList li{
+    padding: 10px;
+}
+ul#pushNotificationList li:not(:last-child) {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+    .disabled {
+        pointer-events: none;
+        opacity: 0.5; /* You can adjust the opacity to visually indicate that the content is disabled */
+    }

@@ -1,0 +1,445 @@
+@import "./variable"
+body
+  background: #F2F2F2
+  .lm_vec
+    position: fixed
+    right: 0
+    bottom: 0
+    .light
+      display: block
+    .dark
+      display: none
+.lm__header-logo
+  display: none
+.admin-dash
+  .container
+    padding-left: 20px
+    padding-right: 20px
+    @media (min-width:992px)
+      padding-left: 250px
+      padding-right: 20px
+  .lm_admin-temp
+    .lm_analytics-card
+      padding: 30px
+      overflow: hidden
+      background: #fff !important
+      @media( max-width:1400px)
+        padding: 20px
+
+      .text-bg
+        background: rgba(15, 34, 56, 0.1)
+        padding: 10px
+        border-radius: 50px
+        text-align: center
+        width: 45px
+        height: 45px
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        color: #0f2238
+
+    .card-img-overlay
+      background: #0f2238
+    .cart-svg
+      svg
+        path
+          stroke: #0f2238
+    .link-svg
+      svg
+        path
+          fill: #e3a130
+    .revenue-svg
+      svg
+        path
+          stroke: #11D147
+    .chart-tab
+      background: white
+      border-radius: 30px
+      .nav-item .nav-link
+        color: #0f2238 !important
+        padding: 10px 25px
+        background: white
+        border-radius: 30px
+        &.active
+          color: #fff !important
+          background: #0f2238
+    .tab-overlay
+      .overlay.dark
+        background-color: rgba(0, 0, 0, 0.5)
+
+      .tab-pane
+        position: relative
+        >
+          .overlay-wrapper
+            >
+              .overlay
+                border-top-left-radius: 0px
+                border-top-right-radius: 0px
+                -ms-flex-direction: column
+                flex-direction: column
+                margin-top: -1.25rem
+                margin-left: -1.25rem
+                height: calc(100% + 2 * 1.1rem)
+                width: calc(100% + 2 * 1.1rem)
+
+      .card .overlay, .info-box .overlay, .overlay-wrapper .overlay, .small-box .overlay
+        border-radius: .25rem
+        -ms-flex-align: center
+        align-items: center
+        display: -ms-flexbox
+        display: flex
+        -ms-flex-pack: center
+        justify-content: center
+        z-index: 50
+
+      .overlay-wrapper > .overlay
+        height: 100%
+        left: 0
+        position: absolute
+        top: 0
+        width: 100%
+
+      .tab-pane > .overlay-wrapper > .overlay.dark
+        color: #fff
+
+    .card-overview,
+    .card-revenue,
+    .card-doughnut,
+    .card-data
+      padding: 15px
+    .divider
+      &.divider-vertical
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100%
+        margin: unset
+        background: no-repeat
+
+        &:before
+          bottom: 50%
+          top: 0
+
+      .divider-text
+        position: relative
+        display: inline-block
+        font-size: 0.8rem
+        padding: 0rem 1rem
+
+      &.divider-vertical
+        .divider-text .badge-divider-bg
+          padding: 10px
+          border-radius: 50%
+          font-weight: 500
+          font-size: .6875rem
+
+        &:before
+          content: ""
+          position: absolute
+          left: 50%
+          border-left: 1px solid rgba(75, 70, 92, 0.2)
+
+        &:after
+          content: ""
+          position: absolute
+          left: 50%
+          border-left: 1px solid rgba(75, 70, 92, 0.2)
+          top: 50%
+          bottom: 0
+
+        .divider-text
+          background-color: #fff
+          z-index: 1
+          padding: 15px
+    .nav-list
+      .nav-item
+        .nav-link
+          color: #0f2238
+
+  .bg-label-secondary
+    background-color: #e7e8eb !important
+    color: #0f2238 !important
+
+  .bg-primary-light-10
+    background: rgba(277,161 ,48 , 0.1)
+
+  .bg-dark-light-10
+    background: rgba(15,34 ,56 , 0.1)
+
+  .bg-green-light-10
+    background: rgba(17,209 ,71 , 0.1)
+
+  .avtar-40
+    box-shadow: none !important
+    width: 30px
+    height: 30px
+
+@media( max-width:1400px)
+  .chart-container
+    margin-top: 100px
+  .col
+    padding-left: 8px
+    padding-right: 8px
+
+@media( max-width:1200px)
+  .chart-container
+    margin-top: auto
+
+div#example_info
+  float: left
+  margin-left: 10px
+  margin-bottom: 10px
+  padding-top: 0
+
+div#example_paginate
+  float: right
+  margin-right: 10px
+  margin-bottom: 10px
+div#example_paginate
+  display: flex
+  gap: 10px
+
+  span
+    display: flex
+    gap: 10px
+
+.paginate_button
+  padding: 8px 20px
+  background: #f2f2f2
+  border-radius: 10px
+
+  &:hover
+    color: #0f2238
+    background: #dddfe0
+
+  &.current
+    background: #e3a130
+    color: #fff
+
+  &.previous.disabled
+    cursor: default
+
+    &:hover
+      color: currentcolor
+      background: #f2f2f2
+.dataTables_filter input
+  border: 1px solid #f2f2f2
+  border-radius: 10px
+  padding: 0.422rem 0.875rem
+  font-size: 0.9375rem
+  font-weight: 400
+  margin-top: 20px
+
+.dataTables_length select
+  border: 1px solid #f2f2f2
+  border-radius: 10px
+  padding: 0.422rem 0.875rem
+  font-size: 0.9375rem
+  font-weight: 400
+  margin-top: 20px
+
+div#example_length
+  float: left
+
+table#example
+  margin-top: 15px !important
+  margin-bottom: 30px !important
+
+.col
+  padding-left: 8px
+  padding-right: 8px
+
+@media (min-width: 992px)
+  .dash__header
+    .container
+      padding-left: 250px
+
+.d-flex.gap-2.justify-content-end
+  p
+    font-size: 14px
+
+.lm__dash
+  width: 230px
+@media (max-width: 1400px)
+  .lm__dash
+    width: 230px
+    padding: 15px
+
+// dark mode
+
+body
+  &.dark
+    .admin-dash
+      .lm_admin-temp
+        .lm_analytics-card
+          background: var(--bg-dark-theame) !important
+    .card-overview,
+    .card-revenue,
+    .chart-card,
+    .card-data
+      background: var(--bg-dark-theame)
+      color: #ffffff
+    .admin-dash
+      .lm_admin-temp
+        .lm_analytics-card
+          .text-bg
+            background: rgb(255 255 255 / 50%)
+            color: #ffff
+
+    .table-striped > tbody > tr
+      &:nth-of-type(odd) > *
+        color: #ffffff
+        background: #0f2238
+
+      &:nth-of-type(even) > *
+        color: #ffffff
+        background: #0e2e46
+
+    .table > :not(caption) > * > *
+      color: #ffffff
+      background: #01152b
+
+    .admin-dash
+      .lm_admin-temp .divider.divider-vertical .divider-text
+        background-color: #0a2538
+
+      .bg-label-secondary
+        background-color: #01152b !important
+        color: #ffffff !important
+
+      .bg-dark-light-10
+        background: rgba(255, 255, 255, 0.1)
+
+      .lm_admin-temp .cart-svg svg path
+        stroke: #ffff !important
+    .admin-dash
+      .lm_admin-temp
+        .nav-list
+          .nav-item
+            .nav-link
+              color: #ffffff !important
+        .chart-tab
+          background: #01152b
+          .nav-item
+            .nav-link
+              color: #ffffff !important
+              padding: 10px 25px
+              background: transparent
+              border-radius: 30px
+              &.active
+                background: #e3a130
+    .dataTables_filter input,
+    .dataTables_length select
+      color: #fff
+      border: 1px solid #01152b
+      background: #01152b
+
+.table-striped > tbody > tr
+  &:nth-of-type(odd) > *
+    color: #01152b
+    background: #fff
+
+  &:nth-of-type(even) > *
+    color: #01152b
+    background: #f2f2f2
+
+// .table > :not(caption) > * > *
+//   color: #ffffff
+//   background: #01152b
+
+table.dataTable.table-striped>tbody>tr.odd>* 
+    box-shadow: none !important
+
+.bg-light
+  background-color: #0f2238 !important
+  color: #ffffff
+
+div#example_session_length
+  float: left
+
+div#example_session_paginate
+  display: flex
+  gap: 10px
+  float: right
+  margin-right: 10px
+  margin-bottom: 10px
+
+div#example_session_paginate span
+  display: flex
+  gap: 10px
+
+div#example_session_info
+  float: left
+  margin-left: 10px
+  margin-bottom: 10px
+  padding-top: 0
+
+div#example_plan_length
+  float: left
+
+div#example_plan_paginate
+  display: flex
+  gap: 10px
+  float: right
+  margin-right: 10px
+  margin-bottom: 10px
+
+div#example_plan_paginate span
+  display: flex
+  gap: 10px
+
+div#example_plan_info
+  float: left
+  margin-left: 10px
+  margin-bottom: 10px
+  padding-top: 0
+
+.nav-transaction
+  background: #fff
+  padding: 8px
+  border-radius: 50px
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1490196078) !important
+  @media (max-width: 576px)
+    padding: 8px
+    border-radius: 14px
+  .nav-item .nav-link
+    color: #0d2137
+    border-radius: 50px
+    background: transparent
+    padding: 6px 30px
+    transition: all 0.5s ease-in-out
+    @media (max-width: 576px)
+      padding: 6px 10px
+      font-size: 14px
+       
+    &.active
+      color: #ffffff
+      background: #01152b
+      border-radius: 50px
+
+.history_tbl table thead th
+  white-space: nowrap
+
+  &:nth-child(1)
+    width: 5% !important
+
+  &:nth-child(2)
+    width: 10% !important
+
+  &:nth-child(3)
+    width: 35% !important
+
+  &:nth-child(4), 
+  &:nth-child(5), 
+  &:nth-child(6)
+    width: 5% !important
+
+
+body.dark .nav-transaction
+  background: #0e2e46
+
+  .nav-item .nav-link
+    color: #ffffff

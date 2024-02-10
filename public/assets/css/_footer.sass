@@ -1,0 +1,153 @@
+// 
+
+#main-footer.footer
+    .footer__inner
+        .footer__logo-con
+            .footer__nav-logo
+                margin-bottom: 1rem
+            p
+                color: var(--light-text)
+        .footer__nav
+            span
+                color: var(--gray-400)
+                font-weight: var(--font-weight-smedium)
+            .footer-navbar-items
+                margin-top: 5px
+                .navbar-item
+                    padding: 6px 0
+                    font-weight: var(--font-weight-medium)
+        .divider
+            color: #475467
+            border: 0
+            border-top: 1px solid
+            opacity: 0.2
+        .bottom__footer
+            .footer__copyright-link
+                .nav
+                    display: flex
+                    justify-content: flex-end
+                    li
+                        &:not(:last-child)
+                            margin-right: 15px
+                        
+@media (max-width:992px) 
+    .flex.justify-content-end
+        justify-content: start
+    .bottom__footer
+        text-align: center
+    // #main-footer.footer
+    //     .footer__inner
+    //         .bottom__footer
+    //                 .footer__copyright-link
+    //                     .nav
+    //                         justify-content: center
+
+@media ( max-width:768px)
+    #main-footer.footer
+        .footer__inner
+            .bottom__footer
+                    .footer__copyright-link
+                        .nav
+                            justify-content: center
+            .divider
+                margin-top: 1rem
+    
+@media  (max-width: 576px)
+    .flex.justify-content-end
+        justify-content: center
+    .bottom__footer
+        text-align: center
+    .footer__inner
+        text-align: center
+        
+    
+
+
+// .footer__contact-info
+//     position: relative
+//     max-width: 100%
+//     width: 100%
+//     &:before
+//         content: ""
+//         position: absolute
+//         left: 0
+//         top: 0
+//         height: 100%
+//         border: 0.0625rem solid var(--contact-bg)
+//     strong
+//         width: 9.375rem
+//         display: inline-block
+//         max-width: 9.375rem
+//         flex: 0 0 9.375rem
+        
+// .footer
+//     .contact__items .contact__item 
+//         display: flex
+//         font-size: 1.25rem
+//         a
+//             display: flex
+//             font-size: 1.25rem   
+//             color: var(--primary-color)  
+
+// .footer__nav a, .footer__address-info span
+//     color: var(--light-text)
+
+// .ad-footersocial__wrapper svg path, .ad-footersocial__wrapper svg circle
+//     fill: var(--light-text)
+
+// .footer__nav ul > li:not(:last-child), .footer__address-info ul > li:not(:last-child)
+//     padding-right: .9375rem
+//     margin-right: .9375rem 
+//     position: relative
+
+// .footer__address-info
+//     margin-top: 1.875rem
+//     padding-top: 1.875rem
+//     margin-bottom: 2.5rem
+//     border-top: 0.0625rem solid var(--light-text)
+//     max-width: 57.5rem
+
+// .copyright__wrapper
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     margin-top: 1.25rem
+//     flex-direction: column
+
+// .footer__nav ul > li:not(:last-child):after, .footer__address-info ul > li:not(:last-child):after
+//     content: ""
+//     position: absolute
+//     top: 0
+//     bottom: 0
+//     margin: auto
+//     right: 0
+//     height: 70%
+//     border-right: 0.0625rem solid var(--light-text)
+
+
+
+// .footer 
+//     position: sticky 
+//     overflow: hidden 
+//     top: 100% 
+
+// @media (max-width: 991px) 
+//     .footer__nav, .footer__address-info
+//         display: none
+
+//     .copyright__wrapper span
+//         color: var(--light-text)
+
+//     .footer__nav-logo
+//         margin-bottom: 1.75rem
+
+//     .copyright__wrapper
+//         margin-top: 1.75rem
+
+//     .footer__inner
+//         padding-top: 2.5rem
+//         padding-bottom: 2.5rem	
+
+// @media (min-width: 992px)   
+//     .copyright__wrapper span
+//         display: none

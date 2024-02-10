@@ -1,0 +1,108 @@
+@import "./variable"
+
+body
+  background: #F2F2F2
+  .lm_vec
+    position: fixed
+    right: 0
+    bottom: 0
+    z-index: -1
+    .light
+      display: block
+    .dark
+      display: none
+.lm__header-logo
+  display: none
+
+.lm__dash-con
+  margin-top: 150px
+  @media (max-width:992px)
+    margin-top: 100px
+
+.z-index-n1
+  z-index: -1
+
+.z-index-3
+  z-index: 3
+
+.lm__menu-start
+  width: 350px !important
+  background: transparent
+  .offcanvas-header
+    z-index: 9
+
+::-webkit-scrollbar
+  -webkit-appearance: none
+  width: 2px
+  height: 4px
+
+::-webkit-scrollbar-thumb
+  border-radius: 4px
+  background-color: rgb(227 161 48)
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5)
+
+  // Payement
+.lm__dash-con.payement_plan
+  .lm_payment-plan
+    // z-index: 99
+    max-width: 900px
+    width: 100%
+    border-radius: 30px
+    @media (max-width:991px)
+      max-width: 100%
+  h4
+    font-weight: 500
+  .table
+    z-index: 9
+    font-family: var(--primary-font)
+    border: transparent
+    >:not(caption)
+      >*
+        >*
+          padding: 15px
+          padding: 10px 30px 10px 13px
+    thead
+      tr
+        color: #121212
+    tr
+      color: #7C7F86
+      &:nth-child(odd)
+        background: #E6E6E6
+        color: #7C7F86
+      &:nth-child(even)
+        background: #FFFFFF
+      td
+        color: #7C7F86
+    th
+      white-space: nowrap
+      padding: 10px 10px 10px 13px
+  .lm__profile-form
+    display: flex
+    justify-content: center
+    // height: 100%
+    align-items: center
+  .table-search
+    .form-control
+      padding: 10px 20px
+      margin-top: 30px
+      margin-bottom: 15px
+
+@media (max-width:490px)
+  .lm__dash-heade
+    .lm_nav,
+    .col-2,
+    .col-lg-6
+      padding: 0
+
+body.dark
+  .lm__dash-con.payement_plan
+    table
+      svg
+        path
+          fill: #cc4141
+
+table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_asc:before, table.dataTable thead>tr>th.sorting_asc:after, table.dataTable thead>tr>th.sorting_desc:before, table.dataTable thead>tr>th.sorting_desc:after, table.dataTable thead>tr>th.sorting_asc_disabled:before, table.dataTable thead>tr>th.sorting_asc_disabled:after, table.dataTable thead>tr>th.sorting_desc_disabled:before, table.dataTable thead>tr>th.sorting_desc_disabled:after, table.dataTable thead>tr>td.sorting:before, table.dataTable thead>tr>td.sorting:after, table.dataTable thead>tr>td.sorting_asc:before, table.dataTable thead>tr>td.sorting_asc:after, table.dataTable thead>tr>td.sorting_desc:before, table.dataTable thead>tr>td.sorting_desc:after, table.dataTable thead>tr>td.sorting_asc_disabled:before, table.dataTable thead>tr>td.sorting_asc_disabled:after, table.dataTable thead>tr>td.sorting_desc_disabled:before, table.dataTable thead>tr>td.sorting_desc_disabled:after
+  right: 0px !important
+
+.lm__dash-con.payement_plan .table > :not(caption) > * > *
+  padding: 10px 20px 10px 13px

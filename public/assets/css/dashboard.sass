@@ -1,0 +1,525 @@
+@import "./variable"
+
+body
+  background: #F2F2F2
+  .lm_vec
+    position: fixed
+    right: 0
+    bottom: 0
+    .light
+      display: block
+    .dark
+      display: none
+.lm__header-logo
+  display: none
+
+.lm__dash-con
+  margin-top: 150px
+  @media (max-width:992px)
+    margin-top: 100px
+
+.lm_dash-card
+  max-width: 900px
+  width: 100%
+  border-radius: 30px
+
+  &.lm_disable
+    opacity: 0.4
+    pointer-events: none
+  &.lm_active
+    opacity: 1
+    pointer-events: auto
+.lm_dash-card-con
+  border-radius: 30px
+  .lm_dash-card
+    .pe-3
+      padding-right: 30px !important
+  h5
+    font-size: 24px
+    @media (max-width: 576px)
+      font-size: 20px
+  p
+    font-size: 18px
+    @media (max-width: 576px)
+      font-size: 16px
+
+  .btn
+    font-size: 16px
+    padding: 10px 25px
+    @media ( max-width: 576px )
+      font-size: 12px
+
+.w-60
+  max-width: 60%
+  @media (max-width:786px)
+    max-width: 80%
+  @media (max-width:576px)
+    max-width: 100%
+
+.lm__dash-inner
+  position: relative
+  padding-left: 40px
+
+.lm_profile-modal.show
+  width: 800px !important
+  .lm_profile-modal
+    background: #252A36
+    position: sticky
+    top: 0
+    z-index: 12
+  .lm_profile-img1
+    width: 120px
+    height: 120px
+    border-radius: 10px
+    margin-left: 50px
+    position: relative
+    margin-top: -30px
+    svg
+      path
+        fill: #ffffff
+  .lm__profile-form
+    padding: 30px
+    @media( max-width:576px)
+      padding: 20px
+
+  .shadow
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15) !important
+  .lm_form-add
+    width: 50px
+    height: 50px
+    background: #fff
+    border-radius: 50%
+    flex: 0 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    img
+      width: 20px
+  .form-control
+    padding: 12px 25px
+  .lm_additional-btn
+    width: 28px
+    height: 28px
+    display: flex
+    flex: 0 0 auto
+    border-radius: 50%
+    min-width: auto
+    padding: 0
+
+.btn-toogle
+  &.active,
+  &:hover,
+  &:focus,
+  &:focus-visible
+    color: none !important
+    background-color: transparent !important
+    border-color: transparent !important
+    box-shadow: none !important
+
+.z-index-n1
+  z-index: -1
+
+.z-index-3
+  z-index: 3
+
+.lm__menu-start
+  width: 350px !important
+  background: transparent
+  .offcanvas-header
+    z-index: 9
+
+.lm_dwnl
+  input[type="checkbox"]
+    position: relative
+    width: 100px
+    height: 45px
+    -webkit-appearance: none
+    appearance: none
+    background: #252A36
+    outline: none
+    border-radius: 2rem
+    cursor: pointer
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 50%)
+    padding: 5px
+  input[type="checkbox"]::before
+    content: ""
+    width: 34px
+    height: 34px
+    border-radius: 50%
+    background: #fff
+    position: absolute
+    background-image: url("../images/apple.svg")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 70%
+    // top: 50%
+    // left: 6
+    transition: 0.5s
+    // transform: translateY(-50%)!important
+  input[type="checkbox"]:checked
+    background: #252A36
+    &::before
+      transform: translateX(165%)
+      // background: red
+      background-image: url("../images/android.svg")
+      background-position: center
+      background-repeat: no-repeat
+
+.lm_dwnl.text-center
+  h5
+    font-size: 22px
+  p
+    font-size: 20px
+.lm_dwnl,
+.lm_dwnl-input
+  padding: 0 50px
+
+.lm_dwnl
+  margin-top: 165px
+  @media( max-width:576px)
+    margin-top: 100px
+
+.lm_dwnl-input
+  .btn
+    font-size: 14px
+  .lm_dwn-txt
+    a
+      font-weight: 500
+      color: #252A36
+      &:hover
+        color: var(--primary-color)
+
+.lm_noti
+  padding: 40px
+  .lm_noti-title
+    p
+      color: #7C7F86
+      margin-bottom: 20px
+  .lm_noti-upd
+    h6
+      font-size: 20px
+
+.lm_noti-freq
+  padding-top: 20px !important
+  padding: 40px
+  .lm_noti-freq
+    background: #252A36
+    padding: 20px 10px
+    label
+      font-size: 18px
+      font-weight: 500
+      font-family: var(--primary-font) !important
+      color: var(--primary-color)
+      p
+        font-size: 16px
+        font-weight: normal
+        color: #FFFFFF
+        margin-bottom: 0
+    .form-check-input
+      border: 2px solid #e3a130
+      background: transparent
+      &:checked
+        background-color: #e3a130 !important
+        border-color: #e3a130 !important
+        box-shadow: inset 0px 0px 0px 2px #252a36 !important
+      &:focus
+        box-shadow: inset 0px 0px 0px 2px #252a36 !important
+        box-shadow: none
+.lm_noti-type
+  padding-top: 20px !important
+  padding: 40px
+  &:not(:last-child)
+    padding-bottom: 0px !important
+  .lm_noti-type-title
+    p
+      color: #7C7F86
+  .lm_noti-type-in
+    p
+      color: #252A36
+      font-weight: 600
+    span
+      color: #7C7F86
+
+.lm_noti,.lm_noti-type
+  .lm_noti-card
+    padding: 10px !important
+    p
+      color: #7C7F86
+      font-size: 14px
+  input[type="checkbox"]
+    position: relative
+    width: 45px
+    height: 22px
+    -webkit-appearance: none
+    appearance: none
+    background: #252A36
+    outline: none
+    border-radius: 2rem
+    cursor: pointer
+    // box-shadow: inset 0 0 5px rgb(0 0 0 / 50%)
+    padding: 5px
+  input[type="checkbox"]::before
+    content: ""
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    background: #fff
+    position: absolute
+    top: 3px
+    left: 3px
+    transition: 0.5s
+    transform: translateX(0%)
+  input[type="checkbox"]:checked
+    background: #E3A130
+    &::before
+      transform: translateX(140%)
+      background: #fff
+      background-position: center
+      background-repeat: no-repeat
+
+// .dropdown-menu.lm_drop.show
+//   min-width: 15rem !important
+
+.progress-wrapper
+  display: flex
+  position: relative
+  justify-content: space-between
+  width: 50vw
+  max-width: 100%
+  margin-bottom: 20px
+  &::before
+    content: ""
+    width: 100%
+    background: #eee
+    position: absolute
+    top: 50%
+    left: 0
+    height: 4px
+    transform: translatey(-50%)
+    z-index: -1
+// .progress
+//   position: absolute
+//   background-color: red
+//   width: 0
+//   top: 50%
+//   left: 0
+//   height: 4px
+//   z-index: -1
+//   transform: translatey(-50%)
+//   transition: 0.2s linear
+.circle
+  color: #999
+  background-color: #fff
+  border-radius: 50%
+  height: 30px
+  width: 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 3px solid
+  transition: all 0.5s ease-in-out
+  &.active
+    border: 3px solid
+    transition: all 0.5s ease-in-out
+
+// ::-webkit-scrollbar
+//   -webkit-appearance: none
+//   width: 2px
+//   height: 2px
+
+// ::-webkit-scrollbar-thumb
+//   border-radius: 4px
+//   background-color: rgb(227 161 48)
+//   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5)
+
+$colorActive: #34820D
+$colorNeutral: #707070 //#C7C7C7;
+
+.progress-container
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  // position: relative
+  margin-bottom: 30px
+  max-width: 100%
+  width: 220px
+  position: absolute
+  left: -10px
+  top: 10px
+  overflow: hidden
+  // height: 85vh
+
+.progress-dash
+  background-color: #11D147
+  position: absolute
+  top: 0%
+  left: 20px
+  //transform: translateY(-50%);
+  width: 2px
+  //width: 0%;
+  height: 35%
+  z-index: -1
+  transition: all 0.5s ease-in-out
+
+.progress-container::before
+  content: ' '
+  // background-color: red
+  position: absolute
+  top: 50%
+  left: 9%
+  transform: translateY(-50%)
+  height: 95%
+  width: 2px
+  z-index: -1
+  border: 1px dashed
+  transition: all 0.5s ease-in-out
+
+.step-progress
+  list-style: none
+  margin: 0
+  padding: 0
+  display: flex
+  flex-direction: column
+  row-gap: 150px
+  @media ( max-width: 768px)
+    row-gap: 230px
+  // @media ( max-width: 490px)
+  //   row-gap: 160px
+
+  & li
+    display: grid
+    grid-template-columns: fit-content(28px) auto
+
+.text
+  color: $colorNeutral
+  text-align: left
+  display: flex
+  height: 100%
+  line-height: 28px
+  margin-left: 8px
+  font-size: 12px
+  font-weight: 500
+
+  .active_step &
+    color: $colorActive
+
+.circle, .circle2
+  background-color: #7C7F86
+  border-radius: 50%
+  color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 0
+  border: 2px solid #7C7F86
+  font-size: 12px
+  font-weight: 700
+  height: 40px
+  width: 40px
+  transition: all 0.5s ease-in-out
+
+.circle2
+  background-color: #cdcdcd
+  border: #cdcdcd
+  background-position: center center
+
+.circle2.active
+  opacity: 1
+  transition: all 0.5s ease-in-out
+
+.circle.active, .circle2.active
+  border-color: #11D147
+  color: #fff
+  background-color: #11D147
+  background-image: url("../images/check-1.svg")
+  // background-position: center
+  background-repeat: no-repeat
+  font-size: 0
+  transition: all 0.5s ease-in-out
+
+.progress .circle:last-child,
+.step-progress .step:last-child .circle2
+  margin-bottom: 0
+
+.lm_dash-card.card.border-0
+  .pe-3
+    padding-right: 30px !important
+
+.lm_dash-step
+  h4
+    font-weight: 500
+
+span.position-absolute.bottom-0.end-0.pe-4.pb-4 a
+  background: #000a15
+  padding: 3px
+  border-radius: 5px
+  box-shadow: 0px 0px 8px 0px #00000033
+.position-absolute.bottom-0.end-0.pe-2.pb-2 a
+  background: #ffffff
+  padding: 3px
+  border-radius: 5px
+  box-shadow: 0px 0px 8px 0px #00000033
+
+
+// .btn-close
+//   background-image: url("../images/close.svg")
+//   background-position: center
+//   background-repeat: no-repeat
+
+span
+  &.select2-dropdown
+    &.select2-dropdown--below
+      border: none
+      border-radius: 20px !important
+      overflow: hidden
+      border-bottom-right-radius: 0 !important
+      border-bottom-left-radius: 0 !important
+      margin-top: 0
+      z-index: 1
+      position: absolute
+      top: 110%
+      width: 100%
+      border-radius: 0 0 30px 30px !important
+      padding: 8px 10px !important
+      left: 0
+      right: 0
+      box-shadow: 1px 22px 30px rgba(23, 25, 27, 0.07)
+      border-top: 1px solid #F2F2F2
+      // box-shadow: 0px 0px 8px 0px #00000026
+
+  &.select2
+    &.select2-container
+      &.select2-container--default
+        &.select2-container--below
+          &.select2-container--focus
+            &.select2-container--open
+              border-radius: 20px 20px 0 0 !important
+              // border-top-left-radius: 20px !important
+              // border-top-right-radius: 20px !important
+              // border-bottom-left-radius: 0 !important
+              // border-bottom-right-radius: 0 !important
+              // border-radius: 20px !important
+.select2
+  &.select2-container
+    max-width: 100% !important
+
+.lm_profile-img .cover-wraper
+  // padding: 20px
+  border-radius: 20px
+
+  img
+    border-radius: 10px
+
+  label
+    right: 25px
+    bottom: 10px !important
+
+.lm_profile-modal.show .lm_profile-img1.img22
+  margin-top: -133px !important
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  margin-left: 35px
+  border: 5px solid #fff
+
